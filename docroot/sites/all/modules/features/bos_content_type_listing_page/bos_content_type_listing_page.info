@@ -1,7 +1,7 @@
-name = Boston Listing Page Content Type
+name = Bahstun Listing Page Content Type
 description = Controls settings for the listing page content type.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = bos_shared_fields
 dependencies[] = ctools

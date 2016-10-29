@@ -1,7 +1,7 @@
-name = Boston Component Hero Image
+name = Bahstun Component Hero Image
 description = Definition for the Hero Image Component
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

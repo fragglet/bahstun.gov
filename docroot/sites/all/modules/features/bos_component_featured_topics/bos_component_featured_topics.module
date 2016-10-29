@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component Featured Guides feature.
+ * Code for the Bahstun Component Featured Guides feature.
  */
 
 include_once 'bos_component_featured_topics.features.inc';

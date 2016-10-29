@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains code for Boston Blocks module.
+ * Contains code for Bahstun Blocks module.
  */
 
 /**
@@ -10,7 +10,7 @@
 function bos_blocks_block_info() {
   $blocks = array();
   $blocks['search'] = array(
-    'info' => t('Boston.gov Search'),
+    'info' => t('Bahstun.gov Search'),
   );
   return $blocks;
 }

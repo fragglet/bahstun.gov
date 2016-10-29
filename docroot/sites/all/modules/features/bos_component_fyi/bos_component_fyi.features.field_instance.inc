@@ -110,8 +110,8 @@ function bos_component_fyi_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'boston_media_browser_tabs--boston_media' => 0,
-          'boston_media_browser_tabs--icons' => 'boston_media_browser_tabs--icons',
+          'bahstun_media_browser_tabs--bahstun_media' => 0,
+          'bahstun_media_browser_tabs--icons' => 'bahstun_media_browser_tabs--icons',
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
           'upload' => 'upload',

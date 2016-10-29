@@ -4,7 +4,7 @@
  * Contains WorkflowContext class.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Behat\Behat\Context\SnippetAcceptingContext;
@@ -12,7 +12,7 @@ use Behat\Behat\Context\SnippetAcceptingContext;
 /**
  * Class WorkflowContext for making workflow steps available.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 class WorkflowContext extends RawDrupalContext implements SnippetAcceptingContext {
 

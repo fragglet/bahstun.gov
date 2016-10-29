@@ -4,12 +4,12 @@
  * Contains Xpath utility class.
  */
 
-namespace Boston\Utility;
+namespace Bahstun\Utility;
 
 /**
  * Class Xpath utility class for helping with xpath manipulations.
  *
- * @package Boston\Utility
+ * @package Bahstun\Utility
  */
 class Xpath {
   /**

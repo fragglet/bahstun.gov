@@ -1,7 +1,7 @@
-name = Boston View News Landing
-description = Boston View News Landing
+name = Bahstun View News Landing
+description = Bahstun View News Landing
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = better_exposed_filters
 dependencies[] = views
 dependencies[] = views_load_more

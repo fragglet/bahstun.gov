@@ -6,7 +6,7 @@
  * Used for defining step definitions around working with site roles.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Behat\Behat\Context\SnippetAcceptingContext;

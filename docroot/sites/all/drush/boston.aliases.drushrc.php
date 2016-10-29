@@ -4,130 +4,130 @@ if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment ci
+// Site bahstun, environment ci
 $aliases['ci'] = array(
-  'root' => '/var/www/html/boston.ci/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.ci/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'ci',
   'ac-realm' => 'prod',
-  'uri' => 'bostonci.prod.acquia-sites.com',
+  'uri' => 'bahstunci.prod.acquia-sites.com',
   'remote-host' => 'staging-15139.prod.hosting.acquia.com',
-  'remote-user' => 'boston.ci',
+  'remote-user' => 'bahstun.ci',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['ci.livedev'] = array(
-  'parent' => '@boston.ci',
-  'root' => '/mnt/gfs/boston.ci/livedev/docroot',
+  'parent' => '@bahstun.ci',
+  'root' => '/mnt/gfs/bahstun.ci/livedev/docroot',
 );
 
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment dev
+// Site bahstun, environment dev
 $aliases['dev'] = array(
-  'root' => '/var/www/html/boston.dev/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.dev/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'dev',
   'ac-realm' => 'prod',
-  'uri' => 'bostondev.prod.acquia-sites.com',
+  'uri' => 'bahstundev.prod.acquia-sites.com',
   'remote-host' => 'staging-15139.prod.hosting.acquia.com',
-  'remote-user' => 'boston.dev',
+  'remote-user' => 'bahstun.dev',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['dev.livedev'] = array(
-  'parent' => '@boston.dev',
-  'root' => '/mnt/gfs/boston.dev/livedev/docroot',
+  'parent' => '@bahstun.dev',
+  'root' => '/mnt/gfs/bahstun.dev/livedev/docroot',
 );
 
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment prod
+// Site bahstun, environment prod
 $aliases['prod'] = array(
-  'root' => '/var/www/html/boston.prod/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.prod/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'prod',
   'ac-realm' => 'prod',
-  'uri' => 'boston.prod.acquia-sites.com',
+  'uri' => 'bahstun.prod.acquia-sites.com',
   'remote-host' => 'web-15135.prod.hosting.acquia.com',
-  'remote-user' => 'boston.prod',
+  'remote-user' => 'bahstun.prod',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['prod.livedev'] = array(
-  'parent' => '@boston.prod',
-  'root' => '/mnt/gfs/boston.prod/livedev/docroot',
+  'parent' => '@bahstun.prod',
+  'root' => '/mnt/gfs/bahstun.prod/livedev/docroot',
 );
 
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment ra
+// Site bahstun, environment ra
 $aliases['ra'] = array(
-  'root' => '/var/www/html/boston.ra/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.ra/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'ra',
   'ac-realm' => 'prod',
-  'uri' => 'bostonra.prod.acquia-sites.com',
+  'uri' => 'bahstunra.prod.acquia-sites.com',
   'remote-host' => 'staging-14794.prod.hosting.acquia.com',
-  'remote-user' => 'boston.ra',
+  'remote-user' => 'bahstun.ra',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['ra.livedev'] = array(
-  'parent' => '@boston.ra',
-  'root' => '/mnt/gfs/boston.ra/livedev/docroot',
+  'parent' => '@bahstun.ra',
+  'root' => '/mnt/gfs/bahstun.ra/livedev/docroot',
 );
 
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment test
+// Site bahstun, environment test
 $aliases['test'] = array(
-  'root' => '/var/www/html/boston.test/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.test/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'test',
   'ac-realm' => 'prod',
-  'uri' => 'bostonstg.prod.acquia-sites.com',
+  'uri' => 'bahstunstg.prod.acquia-sites.com',
   'remote-host' => 'staging-15139.prod.hosting.acquia.com',
-  'remote-user' => 'boston.test',
+  'remote-user' => 'bahstun.test',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['test.livedev'] = array(
-  'parent' => '@boston.test',
-  'root' => '/mnt/gfs/boston.test/livedev/docroot',
+  'parent' => '@bahstun.test',
+  'root' => '/mnt/gfs/bahstun.test/livedev/docroot',
 );
 
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
 }
-// Site boston, environment uat
+// Site bahstun, environment uat
 $aliases['uat'] = array(
-  'root' => '/var/www/html/boston.uat/docroot',
-  'ac-site' => 'boston',
+  'root' => '/var/www/html/bahstun.uat/docroot',
+  'ac-site' => 'bahstun',
   'ac-env' => 'uat',
   'ac-realm' => 'prod',
-  'uri' => 'bostonuat.prod.acquia-sites.com',
+  'uri' => 'bahstunuat.prod.acquia-sites.com',
   'remote-host' => 'staging-15139.prod.hosting.acquia.com',
-  'remote-user' => 'boston.uat',
+  'remote-user' => 'bahstun.uat',
   'path-aliases' => array(
     '%drush-script' => 'drush' . $drush_major_version,
   )
 );
 $aliases['uat.livedev'] = array(
-  'parent' => '@boston.uat',
-  'root' => '/mnt/gfs/boston.uat/livedev/docroot',
+  'parent' => '@bahstun.uat',
+  'root' => '/mnt/gfs/bahstun.uat/livedev/docroot',
 );

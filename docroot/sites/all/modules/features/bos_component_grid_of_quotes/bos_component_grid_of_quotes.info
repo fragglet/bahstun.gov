@@ -1,6 +1,6 @@
-name = Boston Component Grid of Quotes
+name = Bahstun Component Grid of Quotes
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = features
 dependencies[] = field_group

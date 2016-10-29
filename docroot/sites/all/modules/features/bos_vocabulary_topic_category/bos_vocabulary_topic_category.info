@@ -1,7 +1,7 @@
-name = Boston Vocabulary Topic Category
-description = Boston Vocabulary Topic Category
+name = Bahstun Vocabulary Topic Category
+description = Bahstun Vocabulary Topic Category
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

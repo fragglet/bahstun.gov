@@ -4,15 +4,15 @@
  * Test Xpath utility class.
  */
 
-namespace Boston\Test;
+namespace Bahstun\Test;
 
-use Boston\Utility\Xpath;
+use Bahstun\Utility\Xpath;
 use PHPUnit_Framework_TestCase;
 
 /**
  * Class XpathTest used to test the Xpath utility class.
  *
- * @package Boston\Test
+ * @package Bahstun\Test
  */
 class XpathTest extends PHPUnit_Framework_TestCase {
   /**

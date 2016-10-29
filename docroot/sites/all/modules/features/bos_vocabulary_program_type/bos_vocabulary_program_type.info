@@ -1,7 +1,7 @@
-name = Boston Vocabulary Program Type
-description = Boston Vocabulary Program Type
+name = Bahstun Vocabulary Program Type
+description = Bahstun Vocabulary Program Type
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

@@ -11,18 +11,18 @@ function bos_content_type_emergency_alert_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'boston_emergencies';
+  $view->name = 'bahstun_emergencies';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Boston Emergencies';
+  $view->human_name = 'Bahstun Emergencies';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston Emergencies';
+  $handler->display->display_options['title'] = 'Bahstun Emergencies';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -99,7 +99,7 @@ function bos_content_type_emergency_alert_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '19';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['boston_emergencies'] = $view;
+  $export['bahstun_emergencies'] = $view;
 
   return $export;
 }

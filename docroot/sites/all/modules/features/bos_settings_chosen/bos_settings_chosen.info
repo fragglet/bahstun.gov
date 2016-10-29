@@ -1,7 +1,7 @@
 name = bos_settings_chosen
-description = Boston settings feature for chosenjs
+description = Bahstun settings feature for chosenjs
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = chosen
 dependencies[] = ctools
 dependencies[] = strongarm

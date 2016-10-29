@@ -1,4 +1,4 @@
-name = Boston View Transactions
+name = Bahstun View Transactions
 core = 7.x
 package = Features
 dependencies[] = entity

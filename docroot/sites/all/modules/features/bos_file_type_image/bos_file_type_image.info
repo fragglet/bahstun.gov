@@ -1,7 +1,7 @@
-name = Boston File Type Image
+name = Bahstun File Type Image
 description = Control the fields for the image file type.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = bos_vocabulary_icons
 dependencies[] = ctools

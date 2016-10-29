@@ -1,7 +1,7 @@
-name = Boston Global Header
+name = Bahstun Global Header
 description = Control the placement of blocks in the header.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_menu_main_menu
 dependencies[] = context
 dependencies[] = menu_block

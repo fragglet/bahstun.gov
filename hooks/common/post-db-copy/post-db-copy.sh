@@ -15,7 +15,7 @@ source_env="$4"
 
 
 # Scrub the db of any PII if not on prod environemnt
-if [ "$site" != 'boston' ] && [ "$target_env" != 'prod' ]; then
+if [ "$site" != 'bahstun' ] && [ "$target_env" != 'prod' ]; then
   echo "$site.$target_env: The $db_name database has been deployed from $source_env to $target_env.."
   echo "$site.$target_env: Scrubbing database $db_name..."
    (cat <<EOF

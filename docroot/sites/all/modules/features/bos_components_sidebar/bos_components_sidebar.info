@@ -1,7 +1,7 @@
-name = Boston Components Sidebar
-description = Boston Components Sidebar
+name = Bahstun Components Sidebar
+description = Bahstun Components Sidebar
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

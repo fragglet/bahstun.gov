@@ -12,8 +12,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-base theme  = boston
-name        = Boston Public
+base theme  = bahstun
+name        = Bahstun Public
 description = Read the included README.md on how to create a theme with Thunder.
 core        = 7.x
 
@@ -61,16 +61,16 @@ features[] = secondary_menu
 
 ; Set the default values of settings on the theme-settings.php form.
 
-settings[boston_public_breadcrumb]           = yes
-settings[boston_public_breadcrumb_separator] = ' › '
-settings[boston_public_breadcrumb_home]      = 1
-settings[boston_public_breadcrumb_trailing]  = 0
-settings[boston_public_breadcrumb_title]     = 0
-settings[boston_public_skip_link_anchor]     = main-menu
-settings[boston_public_skip_link_text]       = Jump to navigation
-settings[boston_public_meta][]               = html5
-settings[boston_public_meta][]               = meta
-settings[boston_public_rebuild_registry]     = 1
+settings[bahstun_public_breadcrumb]           = yes
+settings[bahstun_public_breadcrumb_separator] = ' › '
+settings[bahstun_public_breadcrumb_home]      = 1
+settings[bahstun_public_breadcrumb_trailing]  = 0
+settings[bahstun_public_breadcrumb_title]     = 0
+settings[bahstun_public_skip_link_anchor]     = main-menu
+settings[bahstun_public_skip_link_text]       = Jump to navigation
+settings[bahstun_public_meta][]               = html5
+settings[bahstun_public_meta][]               = meta
+settings[bahstun_public_rebuild_registry]     = 1
 
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.

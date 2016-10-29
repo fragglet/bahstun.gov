@@ -42,7 +42,7 @@ th[align|valign|width],tbody,thead,tfoot',
           'allow_comments' => 0,
           'nofollow_policy' => 'whitelist',
           'nofollow_domains' => array(
-            0 => 'boston.dev',
+            0 => 'bahstun.dev',
           ),
           'style_color' => array(
             'color' => 0,

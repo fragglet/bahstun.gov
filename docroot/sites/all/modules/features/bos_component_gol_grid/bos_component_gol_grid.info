@@ -1,7 +1,7 @@
-name = Boston Group of Links - Grid Component
+name = Bahstun Group of Links - Grid Component
 description = Provides the "Group of Links - Grid" component for use on topic and landing pages.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = advanced_text_formatter
 dependencies[] = bos_shared_fields

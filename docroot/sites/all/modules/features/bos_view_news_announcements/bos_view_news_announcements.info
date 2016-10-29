@@ -1,7 +1,7 @@
-name = Boston View News & Announcements
+name = Bahstun View News & Announcements
 description = View feature for News & Announcements
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = views

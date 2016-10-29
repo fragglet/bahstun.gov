@@ -9,7 +9,7 @@
  *
  * @ingroup themeable
  */
-function boston_admin_menu_local_tasks(array &$variables) {
+function bahstun_admin_menu_local_tasks(array &$variables) {
   $output = '';
 
   // Add theme hook suggestions for tab type.

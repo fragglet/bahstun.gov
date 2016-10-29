@@ -1,7 +1,7 @@
-name = Boston Menu Block Footer Menu
+name = Bahstun Menu Block Footer Menu
 description = Menu block settings for main menu.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_menu_block_variables
 dependencies[] = fe_block
 dependencies[] = menu_block

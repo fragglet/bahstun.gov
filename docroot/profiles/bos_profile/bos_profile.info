@@ -1,11 +1,11 @@
-name = Boston.gov
-description = Profile for boston.gov public site.
+name = Bahstun.gov
+description = Profile for bahstun.gov public site.
 version = VERSION
 core = 7.x
 
 dependencies[] = bos_core
 
-; boston.gov feature dependencies
+; bahstun.gov feature dependencies
 dependencies[] = bos_blocks
 dependencies[] = bos_pilot_blocks
 dependencies[] = bos_component_election_results

@@ -24,8 +24,8 @@
  *   $conf['ah_restricted_paths'].
  */
 
- // Include Boston.gov settings.
- if (isset($_ENV['AH_SITE_ENVIRONMENT']) && file_exists("/mnt/gfs/{$ac_subname}.{$_ENV['AH_SITE_ENVIRONMENT']}/nobackup/boston.settings.php")) {
+ // Include Bahstun.gov settings.
+ if (isset($_ENV['AH_SITE_ENVIRONMENT']) && file_exists("/mnt/gfs/{$ac_subname}.{$_ENV['AH_SITE_ENVIRONMENT']}/nobackup/bahstun.settings.php")) {
    require "/mnt/gfs/{$ac_subname}.{$_ENV['AH_SITE_ENVIRONMENT']}/nobackup/auth.settings.php";
  }
  

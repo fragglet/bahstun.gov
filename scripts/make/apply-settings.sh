@@ -14,7 +14,7 @@ set -e
 
 echo "--------------------------------"
 echo "Cloning settings"
-git clone git@github.com:CityOfBoston/boston.settings.git ${DIR}/tmp/settings
+git clone git@github.com:CityOfBahstun/bahstun.settings.git ${DIR}/tmp/settings
 echo "Settings cloned. Release the kraken!"
 echo "--------------------------------"
 rm -Rf $DOCROOT/.htaccess
@@ -25,14 +25,14 @@ rm -Rf $DOCROOT/sites/default/settings/auth.settings.php
 rm -Rf $DOCROOT/sites/default/settings/cache.settings.php
 rm -Rf $DOCROOT/sites/default/settings/edit-domain.settings.php
 rm -Rf $DOCROOT/sites/default/settings/saml.settings.php
-mv ${DIR}/tmp/settings/boston.gov/*.settings.php $DOCROOT/sites/default/settings/
-echo "Applied Boston.gov settings"
+mv ${DIR}/tmp/settings/bahstun.gov/*.settings.php $DOCROOT/sites/default/settings/
+echo "Applied Bahstun.gov settings"
 echo "--------------------------------"
 rm -Rf $DOCROOT/sites/hub/settings/auth.settings.php
 rm -Rf $DOCROOT/sites/hub/settings/cache.settings.php
 rm -Rf $DOCROOT/sites/hub/settings/edit-domain.settings.php
 rm -Rf $DOCROOT/sites/hub/settings/saml.settings.php
-mv ${DIR}/tmp/settings/hub.boston.gov/*.settings.php $DOCROOT/sites/hub/settings/
+mv ${DIR}/tmp/settings/hub.bahstun.gov/*.settings.php $DOCROOT/sites/hub/settings/
 echo "Applied settings to The Hub"
 echo "--------------------------------"
 rm -Rf $DOCROOT/simplesamlphp

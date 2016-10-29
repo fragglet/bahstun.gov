@@ -1,7 +1,7 @@
-name = Boston Neighborhoods Vocabulary
+name = Bahstun Neighborhoods Vocabulary
 description = Neighborhoods classification mechanism.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

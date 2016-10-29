@@ -979,7 +979,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
             'colorbox_group' => '',
             'colorbox_multivalue_index' => NULL,
           ),
-          'fallback_image_style' => 'rep_wide_2000x700custom_boston_wide_1x',
+          'fallback_image_style' => 'rep_wide_2000x700custom_bahstun_wide_1x',
           'image_link' => '',
           'lazyload' => 0,
           'lazyload_aspect_ratio' => 0,
@@ -1018,7 +1018,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
             'colorbox_group' => '',
             'colorbox_multivalue_index' => NULL,
           ),
-          'fallback_image_style' => 'rep_wide_2000x700custom_boston_wide_1x',
+          'fallback_image_style' => 'rep_wide_2000x700custom_bahstun_wide_1x',
           'image_link' => '',
           'lazyload' => 0,
           'lazyload_aspect_ratio' => 0,
@@ -1920,7 +1920,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1953,7 +1953,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -2301,7 +2301,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -2334,7 +2334,7 @@ function bos_content_type_place_profile_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',

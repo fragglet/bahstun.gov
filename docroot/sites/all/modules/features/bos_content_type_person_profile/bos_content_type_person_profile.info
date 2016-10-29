@@ -1,7 +1,7 @@
-name = Boston Content Type Person Profile
-description = Boston Content Type Person Profile
+name = Bahstun Content Type Person Profile
+description = Bahstun Content Type Person Profile
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = addressfield
 dependencies[] = bos_shared_fields

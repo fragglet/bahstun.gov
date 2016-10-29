@@ -13,16 +13,16 @@ function bos_dates_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_format_boston_featured';
+  $strongarm->name = 'date_format_bahstun_featured';
   $strongarm->value = 'M j';
-  $export['date_format_boston_featured'] = $strongarm;
+  $export['date_format_bahstun_featured'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_format_boston_short';
+  $strongarm->name = 'date_format_bahstun_short';
   $strongarm->value = 'n/j/y';
-  $export['date_format_boston_short'] = $strongarm;
+  $export['date_format_bahstun_short'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

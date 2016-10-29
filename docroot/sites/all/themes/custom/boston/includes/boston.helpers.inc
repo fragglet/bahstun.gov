@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains theme helper functions leveraged on Boston.gov site.
+ * Contains theme helper functions leveraged on Bahstun.gov site.
  */
 
 /**
@@ -15,7 +15,7 @@
  * @param array $variables
  *   Page variables.
  */
-function _boston_unset_page_title(&$variables) {
+function _bahstun_unset_page_title(&$variables) {
   $hero_classes = array();
   $node_custom_page_templates = array(
     'person_profile',
@@ -31,21 +31,21 @@ function _boston_unset_page_title(&$variables) {
 
     // If there IS a hero image and there IS a header component that IS NOT
     // a featured item, REMOVE default title and blue overlay.
-    if (_boston_check_header_component($variables['node'], 'text')) {
+    if (_bahstun_check_header_component($variables['node'], 'text')) {
       array_push($node_custom_page_templates, 'listing_page');
       $hero_classes[] = 'hero-image-wrapper--no-overlay';
     }
 
     // If there IS a hero image and there IS a header component that IS
     // a featured item, REMOVE title but DO NOT remove blue overlay.
-    if (_boston_check_header_component($variables['node'], 'featured')) {
+    if (_bahstun_check_header_component($variables['node'], 'featured')) {
       array_push($node_custom_page_templates, 'listing_page');
     }
 
     // If there is NO hero image but there IS a header component that IS NOT
     // a featured item,REMOVE title (ignore blue overlay because no image).
     $check_image = FALSE;
-    if (_boston_check_header_component($variables['node'], 'text', $check_image)) {
+    if (_bahstun_check_header_component($variables['node'], 'text', $check_image)) {
       array_push($node_custom_page_templates, 'listing_page');
     }
 
@@ -92,7 +92,7 @@ function _boston_unset_page_title(&$variables) {
  * @param array $variables
  *   Node variables.
  */
-function _boston_unset_node_wrappers(&$variables) {
+function _bahstun_unset_node_wrappers(&$variables) {
   if ($variables['view_mode'] == 'full') {
     $field_no_wrappers = array(
       'field_operation_hours',
@@ -112,11 +112,11 @@ function _boston_unset_node_wrappers(&$variables) {
  * @param array $variables
  *   Node variables.
  */
-function _boston_listing_page_title(&$variables) {
+function _bahstun_listing_page_title(&$variables) {
   // If there is a hero image and there is.
   if (!empty($variables['node']->field_intro_image) &&
         (empty($variables['node']->field_header_component) ||
-        _boston_check_header_component($variables['node'], 'featured'))) {
+        _bahstun_check_header_component($variables['node'], 'featured'))) {
     $variables['with_image_title'] = $variables['node']->title;
   }
 }
@@ -124,7 +124,7 @@ function _boston_listing_page_title(&$variables) {
 /**
  * Checks what type of header component exists and returns a boolean.
  */
-function _boston_check_header_component($node, $check_component = 'text', $check_image = TRUE) {
+function _bahstun_check_header_component($node, $check_component = 'text', $check_image = TRUE) {
   $return_val = FALSE;
   if (!empty($node->field_header_component)) {
     $header = $node->field_header_component;

@@ -155,7 +155,7 @@ function bos_component_hero_image_field_default_field_instances() {
             'colorbox_group' => '',
             'colorbox_multivalue_index' => NULL,
           ),
-          'fallback_image_style' => 'rep_wide_2000x700custom_boston_wide_1x',
+          'fallback_image_style' => 'rep_wide_2000x700custom_bahstun_wide_1x',
           'image_link' => '',
           'lazyload' => 0,
           'lazyload_aspect_ratio' => 0,

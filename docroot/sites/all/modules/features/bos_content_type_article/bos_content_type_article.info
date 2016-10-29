@@ -1,7 +1,7 @@
-name = Boston Content Type Article
-description = Boston Article Content Type
+name = Bahstun Content Type Article
+description = Bahstun Article Content Type
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = bos_shared_fields
 dependencies[] = ctools

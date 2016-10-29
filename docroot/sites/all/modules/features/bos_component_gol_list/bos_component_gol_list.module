@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component Group of Links - List feature.
+ * Code for the Bahstun Component Group of Links - List feature.
  */
 
 include_once 'bos_component_gol_list.features.inc';

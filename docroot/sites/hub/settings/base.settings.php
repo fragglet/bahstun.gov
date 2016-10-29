@@ -8,15 +8,15 @@
 if (!empty($_ENV['AH_SITE_ENVIRONMENT'])) {
   switch ($_ENV['AH_SITE_ENVIRONMENT']) {
     case 'prod':
-      $domain = 'hub.boston.gov';
+      $domain = 'hub.bahstun.gov';
       break;
     case 'test':
-      $domain = 'hub-stg.boston.gov';
+      $domain = 'hub-stg.bahstun.gov';
       break;
     case 'dev':
     case 'ci':
     case 'uat':
-      $domain = 'hub-' . $_ENV['AH_SITE_ENVIRONMENT'] . '.boston.gov';
+      $domain = 'hub-' . $_ENV['AH_SITE_ENVIRONMENT'] . '.bahstun.gov';
       break;
     default:
       // Dynamically set base url based on Acquia environment variable.

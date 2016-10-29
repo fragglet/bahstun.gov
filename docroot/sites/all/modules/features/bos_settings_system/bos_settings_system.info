@@ -1,7 +1,7 @@
-name = Boston System Settings
+name = Bahstun System Settings
 description = Tracks important system variables.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1

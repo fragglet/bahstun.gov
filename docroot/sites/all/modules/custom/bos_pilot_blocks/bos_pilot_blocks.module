@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains code for Boston Pilot Blocks module.
+ * Contains code for Bahstun Pilot Blocks module.
  */
 
 /**
@@ -22,7 +22,7 @@ function bos_pilot_blocks_block_view() {
   $block['subject'] = t('TELL US WHAT YOU THINK');
   $block['content'] = <<<FEEDBACK_TEXT
 <span class="element-invisible modal-id">feedback</span>
-<p>Our site is live, but not completed. We'll always be adding to and improving on it and need your ideas and to make Boston.gov easier to understand and more delightful to use.</p>
+<p>Our site is live, but not completed. We'll always be adding to and improving on it and need your ideas and to make Bahstun.gov easier to understand and more delightful to use.</p>
 <div id="feedback_form_container" class="modal-cta modal-form">
 <form id="feedback_form" accept-charset="UTF-8" action="https://formkeep.com/f/4f5c7ea2dbf0" method="POST">
 <input type="hidden" name="utf8" value="✓">

@@ -1,23 +1,23 @@
-# Contributing to Boston.gov
+# Contributing to Bahstun.gov
 
-:+1::tada: Thank-you for being interested in contributing to Boston.gov! :tada::+1:
+:+1::tada: Thank-you for being interested in contributing to Bahstun.gov! :tada::+1:
 
-This is a guideline for contributing to the development of Boston.gov. We're open to improvements in our process, so feel free to send a PR for this document, or create an issue.
+This is a guideline for contributing to the development of Bahstun.gov. We're open to improvements in our process, so feel free to send a PR for this document, or create an issue.
 
 ## Jump right in
 
- * [Report issues on Boston.gov](#reporting-bugs)
+ * [Report issues on Bahstun.gov](#reporting-bugs)
  * [Suggest new features](#suggest-new-features)
  * [Contributing to development](#contributing-to-development)
 
 ### Reporting bugs
 
-If you need to submit a bug report for Boston.gov, please follow these guidelines. Following these guidelines helps us and the community better understand your report, reproduce the bug, and find related issues.
+If you need to submit a bug report for Bahstun.gov, please follow these guidelines. Following these guidelines helps us and the community better understand your report, reproduce the bug, and find related issues.
 
 #### Prior to submitting a bug
 
  * Verify that you are able to reproduce it repeatedly. Try multiple browsers, devices, etc. Also, try clearing your cache.
- * Perform a quick search of our [existing issues](https://github.com/CityOfBoston/boston.gov/issues) to see if it has been logged previously.
+ * Perform a quick search of our [existing issues](https://github.com/CityOfBahstun/bahstun.gov/issues) to see if it has been logged previously.
 
 #### Submitting a bug
 
@@ -60,7 +60,7 @@ Ad blocker: [Ad blocker?]
 
 ### Suggest new features
 
-Have an idea for Boston.gov? If so, [create an issue](https://github.com/CityOfBoston/boston.gov/issues). Prior to submitting your feature request, please do a basic search of existing issues to see if it's already been suggested.
+Have an idea for Bahstun.gov? If so, [create an issue](https://github.com/CityOfBahstun/bahstun.gov/issues). Prior to submitting your feature request, please do a basic search of existing issues to see if it's already been suggested.
 
 #### Feature template
 
@@ -96,7 +96,7 @@ _well_. Add a brief description of what you like and/or dislike about it.]
 
 ### Contributing to development
 
-This section will help you get started contributing to the development of Boston.gov. To get started, you'll need to get a development environment up and running.
+This section will help you get started contributing to the development of Bahstun.gov. To get started, you'll need to get a development environment up and running.
 
 Our process resembles a [Gitflow Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow) with the follow specifics -
 
@@ -107,7 +107,7 @@ Our process resembles a [Gitflow Workflow](https://www.atlassian.com/git/workflo
 
 #### Project setup
 
-Each contributor should [fork](https://help.github.com/articles/fork-a-repo) the primary Boston.gov repo. All developers should then checkout a local copy of the `develop` branch to begin work.
+Each contributor should [fork](https://help.github.com/articles/fork-a-repo) the primary Bahstun.gov repo. All developers should then checkout a local copy of the `develop` branch to begin work.
 
 For any work, pull requests must be created for individual tasks and submitted for review. Before submitting a pull request, be sure to [sync the local branch](https://help.github.com/articles/syncing-a-fork) with the upstream primary branch.
 

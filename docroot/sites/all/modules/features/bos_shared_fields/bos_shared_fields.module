@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * Code for the Boston Shared Fields feature.
+ * Code for the Bahstun Shared Fields feature.
  */
 
 include_once 'bos_shared_fields.features.inc';
 /**
  * @file
- * Code for the Boston Shared Fields feature.
+ * Code for the Bahstun Shared Fields feature.
  */
 
 /**
@@ -23,7 +23,7 @@ function bos_shared_fields_form_node_form_alter(&$form, &$form_state, $form_id) 
 }
 
 /**
- * Set Boston, MA as the default city and state on field_address.
+ * Set Bahstun, MA as the default city and state on field_address.
  *
  * Walk the form recursively in order to account for nested paragraph forms.
  *
@@ -35,9 +35,9 @@ function _set_default_address_field_values(&$form) {
   // if applicable.
   if (array_key_exists('field_address', $form) && is_array($form['field_address'])) {
     if (!empty($form['field_address'])) {
-      // Set Boston as the default city.
+      // Set Bahstun as the default city.
       if (empty($form['field_address'][LANGUAGE_NONE][0]['#address']['locality'])) {
-        $form['field_address'][LANGUAGE_NONE][0]['#address']['locality'] = "Boston";
+        $form['field_address'][LANGUAGE_NONE][0]['#address']['locality'] = "Bahstun";
       }
       // Set Massachusetts as the default state.
       if (empty($form['field_address'][LANGUAGE_NONE][0]['#address']['administrative_area'])) {

@@ -1,7 +1,7 @@
-name = Boston Global Hidden Modal Region
+name = Bahstun Global Hidden Modal Region
 description = Control the placement of blocks in the hidden modal region.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = block
 dependencies[] = bos_pilot_blocks
 dependencies[] = context

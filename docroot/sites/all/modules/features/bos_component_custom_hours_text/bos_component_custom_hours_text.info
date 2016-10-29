@@ -1,7 +1,7 @@
-name = Boston Component Custom Hours Text
+name = Bahstun Component Custom Hours Text
 description = Add custom hours text to a page.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

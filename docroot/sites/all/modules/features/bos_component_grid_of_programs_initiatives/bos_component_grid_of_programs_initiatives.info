@@ -1,7 +1,7 @@
-name = Boston Component Grid of Programs Initiatives
-description = Boston Component Grid of Programs Initiatives
+name = Bahstun Component Grid of Programs Initiatives
+description = Bahstun Component Grid of Programs Initiatives
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

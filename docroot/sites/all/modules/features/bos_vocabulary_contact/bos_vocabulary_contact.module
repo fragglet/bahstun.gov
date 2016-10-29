@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Contact Vocabulary feature.
+ * Code for the Bahstun Contact Vocabulary feature.
  */
 
 include_once 'bos_vocabulary_contact.features.inc';
@@ -26,13 +26,13 @@ function bos_vocabulary_contact_form_taxonomy_form_term_alter(&$form, &$form_sta
  */
 function bos_vocabulary_contact_token_info() {
   $info = array();
-  // Define a new token type for boston.
-  $info['types']['boston'] = array(
-    'name' => t('Boston'),
-    'description' => t('A token type for Boston.'),
+  // Define a new token type for bahstun.
+  $info['types']['bahstun'] = array(
+    'name' => t('Bahstun'),
+    'description' => t('A token type for Bahstun.'),
   );
   // Define our new token.
-  $info['tokens']['boston']['contact-path'] = array(
+  $info['tokens']['bahstun']['contact-path'] = array(
     'name' => t('Contact Path'),
     'description' => t('A token to replace the contact path for person profile.'),
   );
@@ -45,7 +45,7 @@ function bos_vocabulary_contact_token_info() {
 function bos_vocabulary_contact_tokens($type, $tokens, array $data = array(), array $options = array()) {
   $replacements = array();
 
-  if ($type == 'boston') {
+  if ($type == 'bahstun') {
     // Loop through the available tokens.
     foreach ($tokens as $name => $original) {
       // Find our custom tokens by name.

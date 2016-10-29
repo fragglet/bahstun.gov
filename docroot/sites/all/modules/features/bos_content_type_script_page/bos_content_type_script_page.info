@@ -1,6 +1,6 @@
-name = Boston Content Type Script Page
+name = Bahstun Content Type Script Page
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = entityreference

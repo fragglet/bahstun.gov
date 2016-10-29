@@ -1,7 +1,7 @@
-name = Boston Content Type Program Initiative Profile
-description = Boston Content Type Program Initiative Profile
+name = Bahstun Content Type Program Initiative Profile
+description = Bahstun Content Type Program Initiative Profile
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = advanced_text_formatter
 dependencies[] = bos_shared_fields
 dependencies[] = ctools

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Install file for Boston.gov.
+ * Install file for Bahstun.gov.
  */
 
 /**
@@ -373,10 +373,10 @@ function bos_profile_update_7008() {
   module_disable($disabled_modules);
   module_enable($enabled_modules);
 
-  // Boston: Events defaults to being disabled. We only want it enabled on
+  // Bahstun: Events defaults to being disabled. We only want it enabled on
   // the public site. Load the view, set it's disabled flag to false, and then
   // save it so that it becomes enabled.
-  $events = views_get_view('boston_events');
+  $events = views_get_view('bahstun_events');
   if (!empty($events)) {
     $events->disabled = FALSE;
     views_save_view($events);
@@ -416,7 +416,7 @@ function bos_profile_update_7010() {
   $enabled_modules = array(
     'bos_vocabulary_icons',
     'bos_vocabulary_holidays',
-    'bos_view_boston_media',
+    'bos_view_bahstun_media',
     'token_custom',
     'token_filter',
     'bos_content_type_transaction',
@@ -430,7 +430,7 @@ function bos_profile_update_7010() {
       'machine_name' => 'main-transactions-header',
       'name' => 'Main Transactions Header',
       'description' => 'Content that will appear in the main transactions section header on the transaction landing page.',
-      'type' => 'boston',
+      'type' => 'bahstun',
       'content' => 'Main Transactions',
       'format' => 'filtered_html',
     ),
@@ -438,7 +438,7 @@ function bos_profile_update_7010() {
       'machine_name' => 'sticky-transactions-header',
       'name' => 'Sticky Transactions Header',
       'description' => 'Content that will appear in the sticky transactions section header on the transaction landing page.',
-      'type' => 'boston',
+      'type' => 'bahstun',
       'content' => 'Sticky Transactions',
       'format' => 'filtered_html',
     ),

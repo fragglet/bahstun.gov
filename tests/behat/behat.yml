@@ -2,13 +2,13 @@ default:
   suites:
     default:
       contexts:
-        - Boston\Contexts\FeatureContext
-        - Boston\Contexts\MinkContext
-        - Boston\Contexts\ComponentContext
-        - Boston\Contexts\RoleContext
-        - Boston\Contexts\WorkflowContext
-        - Boston\Contexts\MenuContext
-        - Boston\Contexts\FieldContext
+        - Bahstun\Contexts\FeatureContext
+        - Bahstun\Contexts\MinkContext
+        - Bahstun\Contexts\ComponentContext
+        - Bahstun\Contexts\RoleContext
+        - Bahstun\Contexts\WorkflowContext
+        - Bahstun\Contexts\MenuContext
+        - Bahstun\Contexts\FieldContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext

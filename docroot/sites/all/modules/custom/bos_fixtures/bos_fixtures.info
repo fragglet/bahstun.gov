@@ -1,6 +1,6 @@
-name = Boston Fixture Data
+name = Bahstun Fixture Data
 description = Fixture data intended for use with testing, including Behat.
-package = Boston
+package = Bahstun
 core = 7.x
 
 dependencies[] = migrate

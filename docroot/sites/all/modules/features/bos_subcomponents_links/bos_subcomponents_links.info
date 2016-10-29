@@ -1,7 +1,7 @@
-name = Boston Group of Links - Subcomponents
+name = Bahstun Group of Links - Subcomponents
 description = Provides the subcomponents for the Group of Links component.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = bos_shared_fields
 dependencies[] = ctools

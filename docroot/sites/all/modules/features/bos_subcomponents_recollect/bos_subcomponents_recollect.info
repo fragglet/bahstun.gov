@@ -1,4 +1,4 @@
-name = Boston Subcomponent Recollect
+name = Bahstun Subcomponent Recollect
 core = 7.x
 package = Features
 dependencies[] = bos_shared_fields

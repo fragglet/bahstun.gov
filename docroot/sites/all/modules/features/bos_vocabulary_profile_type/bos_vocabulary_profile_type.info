@@ -1,7 +1,7 @@
-name = Boston Vocabulary Profile Type
-description = Boston Vocabulary Profile Type
+name = Bahstun Vocabulary Profile Type
+description = Bahstun Vocabulary Profile Type
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

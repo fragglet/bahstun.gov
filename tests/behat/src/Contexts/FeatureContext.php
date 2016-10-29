@@ -5,7 +5,7 @@
  * Custom Behat Step definitions.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Behat\Testwork\Hook\Scope\BeforeSuiteScope;
@@ -19,7 +19,7 @@ use Symfony\Component\Config\Definition\Exception\Exception;
 /**
  * Context for adding generic steps available to test suites.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {
 

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * Contains functions to alter Drupal's markup for the Boston Hub theme.
+ * Contains functions to alter Drupal's markup for the Bahstun Hub theme.
  */
 
 /**
  * Implements hook_theme().
  */
-function boston_hub_theme() {
+function bahstun_hub_theme() {
   return array(
     'profile_address' => array(
       'variables' => array(
@@ -23,7 +23,7 @@ function boston_hub_theme() {
 /**
  * Implements hook_preprocess_page().
  */
-function boston_hub_preprocess_page(array &$variables) {
+function bahstun_hub_preprocess_page(array &$variables) {
   // Loads Profile fields to variables for logged in users.
   if ($variables['logged_in']) {
     $uid = user_load($variables['user']->uid);
@@ -41,7 +41,7 @@ function boston_hub_preprocess_page(array &$variables) {
       $field_work_email = field_view_field('profile2', $profile_main, 'field_work_email', 'value')['#items'][0]['safe_value'];
 
       if ($field_work_email === null) {
-        $field_work_email = 'default@boston.gov';
+        $field_work_email = 'default@bahstun.gov';
       }
 
       $variables['field_work_email'] = strtolower($field_work_email);
@@ -63,12 +63,12 @@ function boston_hub_preprocess_page(array &$variables) {
       );
     }
     else {
-      $variables['profile_avatar'] = '<img src="/' . drupal_get_path('theme', 'boston_hub') . '/dist/img/default-avatar.svg" alt="Missing profile picture">';
+      $variables['profile_avatar'] = '<img src="/' . drupal_get_path('theme', 'bahstun_hub') . '/dist/img/default-avatar.svg" alt="Missing profile picture">';
     }
 
     $variables['profile_path'] = base_path() . 'my-profile';
     $variables['logout_path'] = base_path() . 'user/logout';
-    $variables['change_password_path'] = 'https://oimprd.cityofboston.gov/admin/faces/pages/pwdmgmt.jspx?backUrl=https%3A%2F%2Foif.cityofboston.gov%2Ffed%2Fidp%2Finitiatesso%3Fproviderid%3Dthehubprod';
+    $variables['change_password_path'] = 'https://oimprd.cityofbahstun.gov/admin/faces/pages/pwdmgmt.jspx?backUrl=https%3A%2F%2Foif.cityofbahstun.gov%2Ffed%2Fidp%2Finitiatesso%3Fproviderid%3Dthehubprod';
   }
   if (!empty($variables['page']['content']['system_main']['search_results'])) {
     $current_path = current_path();
@@ -104,9 +104,9 @@ function boston_hub_preprocess_page(array &$variables) {
 /**
  * Implements hook_preprocess_html().
  */
-function boston_hub_preprocess_html(array &$variables, $hook) {
+function bahstun_hub_preprocess_html(array &$variables, $hook) {
   // Adding theme's JS to footer.
-  drupal_add_js(drupal_get_path('theme', 'boston_hub') . '/dist/js/all.min.js', array(
+  drupal_add_js(drupal_get_path('theme', 'bahstun_hub') . '/dist/js/all.min.js', array(
     'scope' => 'footer',
     'every_page'  => TRUE,
   ));
@@ -115,7 +115,7 @@ function boston_hub_preprocess_html(array &$variables, $hook) {
 /**
  * Implements hook_preprocess_search_results().
  */
-function boston_hub_preprocess_search_results(&$variables) {
+function bahstun_hub_preprocess_search_results(&$variables) {
   // Get the search term from the URL.
   $query_param = check_plain($variables['query']->getParam('q'));
   $clean_title = check_plain(htmlspecialchars_decode($query_param));
@@ -164,12 +164,12 @@ function boston_hub_preprocess_search_results(&$variables) {
 /**
  * Implements hook_preprocess_search_result().
  */
-function boston_hub_preprocess_search_result(&$variables) {
+function bahstun_hub_preprocess_search_result(&$variables) {
 
   // If the result is a node, get the field_updated_date to display.
   if (!empty($variables['result']['node']) && !empty($variables['result']['fields']['dm_field_updated_date'][0])) {
     $my_date = $variables['result']['fields']['dm_field_updated_date'][0];
-    $formatted_date = format_date(strtotime($my_date), 'boston_short');
+    $formatted_date = format_date(strtotime($my_date), 'bahstun_short');
     $variables['updated_date'] = render($formatted_date);
   }
   elseif ($variables['result']['entity_type'] == 'profile2') {
@@ -199,7 +199,7 @@ function boston_hub_preprocess_search_result(&$variables) {
       if ($search_page == 'employee-directory') {
         // Use template file search-result--employee-directory.tpl.php.
         $variables['theme_hook_suggestion'] = 'search_result__employee_directory';
-        $variables['default_profile_picture'] = '<img src="/' . drupal_get_path('theme', 'boston_hub') . '/dist/img/default-avatar-lg.svg" alt="No profile picture available">';
+        $variables['default_profile_picture'] = '<img src="/' . drupal_get_path('theme', 'bahstun_hub') . '/dist/img/default-avatar-lg.svg" alt="No profile picture available">';
       }
     }
   }
@@ -207,7 +207,7 @@ function boston_hub_preprocess_search_result(&$variables) {
   // get the date from the file.
   if (empty($variables['updated_date']) && $variables['result']['bundle'] == 'document') {
     $my_date = $variables['result']['node']->ds_changed;
-    $formatted_date = format_date(strtotime($my_date), 'boston_short');
+    $formatted_date = format_date(strtotime($my_date), 'bahstun_short');
     $variables['updated_date'] = render($formatted_date);
   }
 }
@@ -215,7 +215,7 @@ function boston_hub_preprocess_search_result(&$variables) {
 /**
  * Implements hook_apachesolr_search_noresults().
  */
-function boston_hub_apachesolr_search_noresults() {
+function bahstun_hub_apachesolr_search_noresults() {
 
   // Get the search term from the URL, it's the last element in the URL.
   $url = current_path();
@@ -260,7 +260,7 @@ function boston_hub_apachesolr_search_noresults() {
  * Remove entire function to add count back to facets
  * or uncomment the "Adds count to link" code below.
  */
-function boston_hub_facetapi_link_inactive($variables) {
+function bahstun_hub_facetapi_link_inactive($variables) {
   // Builds accessible markup.
   // @see http://drupal.org/node/1316580
   $accessible_vars = array(
@@ -292,7 +292,7 @@ function boston_hub_facetapi_link_inactive($variables) {
  *
  * Replace the snippet for files with just the name of the file.
  */
-function boston_hub_apachesolr_search_snippets__file($vars) {
+function bahstun_hub_apachesolr_search_snippets__file($vars) {
   $output = reset($vars['flattened_snippets']);
   return $output;
 }
@@ -302,7 +302,7 @@ function boston_hub_apachesolr_search_snippets__file($vars) {
  *
  * Runs a entity specific preprocess function, if it exists.
  */
-function boston_hub_preprocess_entity(&$variables, $hook) {
+function bahstun_hub_preprocess_entity(&$variables, $hook) {
   $function = __FUNCTION__ . '_' . $variables['entity_type'];
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -312,7 +312,7 @@ function boston_hub_preprocess_entity(&$variables, $hook) {
 /**
  * Profile2 specific implementation of template_preprocess_entity().
  */
-function boston_hub_preprocess_entity_profile2(&$variables, $hook) {
+function bahstun_hub_preprocess_entity_profile2(&$variables, $hook) {
   // Get the user we are trying to view.
   $user = user_load($variables['profile2']->uid);
   $user_profile = profile2_load_by_user($user);

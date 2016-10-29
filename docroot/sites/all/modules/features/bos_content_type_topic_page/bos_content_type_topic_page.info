@@ -1,7 +1,7 @@
-name = Boston Guide Content Type
+name = Bahstun Guide Content Type
 description = Guide content type.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = bos_dates
 dependencies[] = bos_image_styles

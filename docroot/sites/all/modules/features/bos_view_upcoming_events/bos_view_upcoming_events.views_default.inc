@@ -74,7 +74,7 @@ function bos_view_upcoming_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_event_dates']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
-    'format_type' => 'boston_featured',
+    'format_type' => 'bahstun_featured',
     'fromto' => 'value',
     'multiple_number' => '',
     'multiple_from' => 'now',

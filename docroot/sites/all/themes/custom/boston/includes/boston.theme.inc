@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * Contains theme overrides for Boston.gov site.
+ * Contains theme overrides for Bahstun.gov site.
  */
 
 /**
- * @defgroup boston_theme_overrides Boston Theme Overrides
+ * @defgroup bahstun_theme_overrides Bahstun Theme Overrides
  * @{
  * Theme functions that are defined by modules, but for theming purposes
  * needed to be overridden.
@@ -30,7 +30,7 @@
  * @return string
  *   A string containing the breadcrumb output.
  */
-function boston_breadcrumb(array $variables) {
+function bahstun_breadcrumb(array $variables) {
   $output = '';
 
   // Determine if we are to display the breadcrumb.
@@ -54,7 +54,7 @@ function boston_breadcrumb(array $variables) {
 /**
  * Returns HTML for status and/or error messages, grouped by type.
  */
-function boston_status_messages($variables) {
+function bahstun_status_messages($variables) {
   $display = $variables['display'];
   $output = '';
 
@@ -126,9 +126,9 @@ function boston_status_messages($variables) {
  * Theme function for formatter: time ranges.
  *
  * Overrides theme_office_hours_time_range to customize time range output
- * for Boston.gov. Used by the daily_hours widget.
+ * for Bahstun.gov. Used by the daily_hours widget.
  */
-function boston_office_hours_time_range($vars = array()) {
+function bahstun_office_hours_time_range($vars = array()) {
   // Add default values to $vars if not set already.
   $vars += array(
     'times' => array(
@@ -139,7 +139,7 @@ function boston_office_hours_time_range($vars = array()) {
     'separator' => ' - ',
   );
   // Override the format used to always be of this format for time range.
-  // This is a Boston.gov customization.
+  // This is a Bahstun.gov customization.
   $vars['format'] = 'g:i A';
 
   $starttime = _office_hours_time_format($vars['times']['start'], $vars['format']);
@@ -165,7 +165,7 @@ function boston_office_hours_time_range($vars = array()) {
  * @return mixed|null|string
  *   The formatted repeat string.
  */
-function boston_date_repeat_rrule_description($rrule, $format = 'D M d Y') {
+function bahstun_date_repeat_rrule_description($rrule, $format = 'D M d Y') {
   // Empty or invalid value.
   if (empty($rrule) || !strstr($rrule, 'RRULE')) {
     return NULL;
@@ -196,7 +196,7 @@ function boston_date_repeat_rrule_description($rrule, $format = 'D M d Y') {
   $interval = date_repeat_interval_options();
   switch ($rrule['FREQ']) {
     case 'WEEKLY':
-      // Customized for Boston.
+      // Customized for Bahstun.
       $description['!interval'] = format_plural($rrule['INTERVAL'], '', 'every @count weeks') . ' ';
       break;
 
@@ -318,7 +318,7 @@ function boston_date_repeat_rrule_description($rrule, $format = 'D M d Y') {
 /**
  * Returns HTML for primary and secondary local tasks.
  */
-function boston_menu_local_tasks(array &$variables) {
+function bahstun_menu_local_tasks(array &$variables) {
   $output = '';
 
   // Add theme hook suggestions for tab type.
@@ -351,13 +351,13 @@ function boston_menu_local_tasks(array &$variables) {
 /**
  * Returns HTML for a single local task link.
  */
-function boston_menu_local_task($variables) {
+function bahstun_menu_local_task($variables) {
   $type = $class = FALSE;
 
   $link = $variables['element']['#link'];
   $link_text = $link['title'];
 
-  // Check for tab type set in boston_menu_local_tasks().
+  // Check for tab type set in bahstun_menu_local_tasks().
   if (is_array($variables['element']['#theme'])) {
     $type = in_array('menu_local_task__secondary', $variables['element']['#theme']) ? 'tabs--secondary' : 'tabs';
   }
@@ -395,7 +395,7 @@ function boston_menu_local_task($variables) {
 /**
  * Returns HTML for a marker for new or updated content.
  */
-function boston_mark($variables) {
+function bahstun_mark($variables) {
   $type = $variables['type'];
 
   if ($type == MARK_NEW) {
@@ -409,14 +409,14 @@ function boston_mark($variables) {
 /**
  * Implements theme_menu_tree__[MENU NAME].
  */
-function boston_menu_tree__main_menu($variables) {
+function bahstun_menu_tree__main_menu($variables) {
   return '<ul class="' . $variables['menu_classes'] . '">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_menu_link__[MENU NAME].
  */
-function boston_menu_link__main_menu($variables) {
+function bahstun_menu_link__main_menu($variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -434,14 +434,14 @@ function boston_menu_link__main_menu($variables) {
 /**
  * Alters the default Panels render callback so it removes the panel separator.
  */
-function boston_panels_default_style_render_region($variables) {
+function bahstun_panels_default_style_render_region($variables) {
   return implode('', $variables['panes']);
 }
 
 /**
  * Overrides default pager output.
  */
-function boston_pager($variables) {
+function bahstun_pager($variables) {
   $tags = $variables['tags'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
@@ -570,5 +570,5 @@ function boston_pager($variables) {
 }
 
 /**
- * @} End of "Boston Theme Overrides".
+ * @} End of "Bahstun Theme Overrides".
  */

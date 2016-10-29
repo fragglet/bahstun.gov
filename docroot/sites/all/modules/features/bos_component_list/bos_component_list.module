@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component List feature.
+ * Code for the Bahstun Component List feature.
  */
 
 include_once 'bos_component_list.features.inc';

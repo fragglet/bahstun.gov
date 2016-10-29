@@ -94,7 +94,7 @@ function bos_view_upcoming_events_feed_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
-    'format_type' => 'boston_short',
+    'format_type' => 'bahstun_short',
     'fromto' => 'value',
     'multiple_number' => '',
     'multiple_from' => '',

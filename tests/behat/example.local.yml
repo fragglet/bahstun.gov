@@ -7,17 +7,17 @@ local:
       paths:
         - %paths.base%/features/public
       contexts:
-        - Boston\Contexts\FeatureContext:
+        - Bahstun\Contexts\FeatureContext:
             parameters:
               environment:
                 # absolute path to local directory to store screenshots - do not include trailing slash
                 screenshot_dir: '/Users/username/Desktop/test'
-        - Boston\Contexts\MinkContext
-        - Boston\Contexts\ComponentContext
-        - Boston\Contexts\RoleContext
-        - Boston\Contexts\WorkflowContext
-        - Boston\Contexts\MenuContext
-        - Boston\Contexts\FieldContext
+        - Bahstun\Contexts\MinkContext
+        - Bahstun\Contexts\ComponentContext
+        - Bahstun\Contexts\RoleContext
+        - Bahstun\Contexts\WorkflowContext
+        - Bahstun\Contexts\MenuContext
+        - Bahstun\Contexts\FieldContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext

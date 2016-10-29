@@ -36,7 +36,7 @@ $conf['preprocess_js'] = FALSE;
 // (admin/config/system/acquia-agent/setup) once and connected to Acquia.
 //$conf['acquia_identifier'] = 'ABCD-12345';
 //$conf['acquia_key'] =  'LONG-UID';
-//$conf['acquia_subscription_name'] = 'City of Boston - The Hub';
+//$conf['acquia_subscription_name'] = 'City of Bahstun - The Hub';
 
 // To be able to utilize the Local Apache Solr, you need to set apachesolr_read_only to 0
 //$conf['apachesolr_read_only'] = "0";

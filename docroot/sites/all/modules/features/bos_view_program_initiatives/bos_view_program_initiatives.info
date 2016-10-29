@@ -1,7 +1,7 @@
-name = Boston View Program Initiatives
+name = Bahstun View Program Initiatives
 description = Controls Program Initiatives view.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = entity
 dependencies[] = views
 features[ctools][] = views:views_default:3.0

@@ -5,16 +5,16 @@
 
 @import '../init/colors'; // local
 @import '../init/variables'; // local
-@import '../../../../boston/src/sass/init/mixins';
+@import '../../../../bahstun/src/sass/init/mixins';
 
 @import 'breakpoint';
 @import 'compass';
 @import 'typey';
 @import 'susy';
 
-@import '../../../../boston/src/sass/init/clearfix';
-@import '../../../../boston/src/sass/init/rtl';
-@import '../../../../boston/src/sass/init/image-url';
-@import '../../../../boston/src/sass/init/visually-hidden';
+@import '../../../../bahstun/src/sass/init/clearfix';
+@import '../../../../bahstun/src/sass/init/rtl';
+@import '../../../../bahstun/src/sass/init/image-url';
+@import '../../../../bahstun/src/sass/init/visually-hidden';
 
 @include chroma-kss-styles();

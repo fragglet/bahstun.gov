@@ -62,18 +62,18 @@ $sites['thehubstg.prod.acquia-sites.com'] = 'hub';
 $sites['thehubuat.prod.acquia-sites.com'] = 'hub';
 
 // Edit Domains for the hub.
-$sites['edit-hub.boston.gov'] = 'hub';
-$sites['edit-ci-hub.boston.gov'] = 'hub';
-$sites['edit-dev-hub.boston.gov'] = 'hub';
-$sites['edit-stg-hub.boston.gov'] = 'hub';
-$sites['edit-uat-hub.boston.gov'] = 'hub';
+$sites['edit-hub.bahstun.gov'] = 'hub';
+$sites['edit-ci-hub.bahstun.gov'] = 'hub';
+$sites['edit-dev-hub.bahstun.gov'] = 'hub';
+$sites['edit-stg-hub.bahstun.gov'] = 'hub';
+$sites['edit-uat-hub.bahstun.gov'] = 'hub';
 
 // Domains for the hub.
-$sites['hub.boston.gov'] = 'hub';
-$sites['hub-ci.boston.gov'] = 'hub';
-$sites['hub-dev.boston.gov'] = 'hub';
-$sites['hub-stg.boston.gov'] = 'hub';
-$sites['hub-uat.boston.gov'] = 'hub';
+$sites['hub.bahstun.gov'] = 'hub';
+$sites['hub-ci.bahstun.gov'] = 'hub';
+$sites['hub-dev.bahstun.gov'] = 'hub';
+$sites['hub-stg.bahstun.gov'] = 'hub';
+$sites['hub-uat.bahstun.gov'] = 'hub';
 
 // Site settings for `drush runserver` for automated tests.
 // @see build/custom/phing/build.yml, behat.server-url

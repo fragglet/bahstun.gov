@@ -1,7 +1,7 @@
-name = Boston Vocabulary Political Party
-description = Boston Vocabulary Political Party
+name = Bahstun Vocabulary Political Party
+description = Bahstun Vocabulary Political Party
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

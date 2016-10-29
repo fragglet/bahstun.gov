@@ -13,7 +13,7 @@
     <section class="main-content" id="content" role="main">
       <div class="notfound-text error-text column desktop-50">
         <h1><?php print $title; ?></h1>
-        <?php print token_replace('[boston:404-page-text]'); ?>
+        <?php print token_replace('[bahstun:404-page-text]'); ?>
 
         <?php if (!empty($search_id)) : ?>
           <div id="<?php print $search_id; ?>">

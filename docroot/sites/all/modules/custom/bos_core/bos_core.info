@@ -1,4 +1,4 @@
-name = Boston core.
+name = Bahstun core.
 description = This holds core configuration shared between all multisites.
 version = VERSION
 core = 7.x
@@ -23,7 +23,7 @@ dependencies[] = taxonomy
 dependencies[] = file
 dependencies[] = rdf
 
-; boston.gov additional dependencies
+; bahstun.gov additional dependencies
 dependencies[] = admin_menu
 dependencies[] = adminimal_admin_menu
 dependencies[] = addressfield
@@ -95,7 +95,7 @@ dependencies[] = metatag
 dependencies[] = metatag_twitter_cards
 dependencies[] = metatag_opengraph
 
-; boston.gov feature dependencies
+; bahstun.gov feature dependencies
 dependencies[] = bos_component_cabinet
 dependencies[] = bos_component_city_score_dashboard
 dependencies[] = bos_component_discussion_topic

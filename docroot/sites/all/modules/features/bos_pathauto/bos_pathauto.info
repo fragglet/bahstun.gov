@@ -1,7 +1,7 @@
-name = Boston Pathauto Settings
-description = Pathauto settings for Boston.gov.
+name = Bahstun Pathauto Settings
+description = Pathauto settings for Bahstun.gov.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1

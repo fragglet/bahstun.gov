@@ -1,7 +1,7 @@
-name = Boston View Places
+name = Bahstun View Places
 description = Controls the Places view and related components.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = views

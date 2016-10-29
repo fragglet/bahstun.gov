@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * bos_view_boston_media.views_default.inc
+ * bos_view_bahstun_media.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function bos_view_boston_media_views_default_views() {
+function bos_view_bahstun_media_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'boston_media_browser_tabs';
+  $view->name = 'bahstun_media_browser_tabs';
   $view->description = 'Default view for the media browser library tab.';
   $view->tag = 'media, default';
   $view->base_table = 'file_managed';
-  $view->human_name = 'Boston Media Browser Tabs';
+  $view->human_name = 'Bahstun Media Browser Tabs';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -92,14 +92,14 @@ function bos_view_boston_media_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
 
-  /* Display: Boston Media */
-  $handler = $view->new_display('media_browser', 'Boston Media', 'boston_media');
+  /* Display: Bahstun Media */
+  $handler = $view->new_display('media_browser', 'Bahstun Media', 'bahstun_media');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Boston Media';
+  $handler->display->display_options['title'] = 'Bahstun Media';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
 
-  /* Display: Boston Icons */
-  $handler = $view->new_display('media_browser', 'Boston Icons', 'icons');
+  /* Display: Bahstun Icons */
+  $handler = $view->new_display('media_browser', 'Bahstun Icons', 'icons');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: File: Name */
   $handler->display->display_options['sorts']['filename']['id'] = 'filename';
@@ -145,7 +145,7 @@ function bos_view_boston_media_views_default_views() {
   $handler->display->display_options['filters']['field_icon_category_tid_1']['operator'] = 'not empty';
   $handler->display->display_options['filters']['field_icon_category_tid_1']['type'] = 'select';
   $handler->display->display_options['filters']['field_icon_category_tid_1']['vocabulary'] = 'icons';
-  $export['boston_media_browser_tabs'] = $view;
+  $export['bahstun_media_browser_tabs'] = $view;
 
   return $export;
 }

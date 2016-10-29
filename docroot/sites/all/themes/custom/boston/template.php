@@ -4,13 +4,13 @@
  * Contains functions to alter Drupal's markup for the STARTERKIT theme.
  */
 
-include_once 'includes/boston.helpers.inc';
-include_once 'includes/boston.theme.inc';
+include_once 'includes/bahstun.helpers.inc';
+include_once 'includes/bahstun.theme.inc';
 
 /**
  * Implements hook_theme().
  */
-function boston_theme() {
+function bahstun_theme() {
   return array(
     'page_contacts' => array(
       'variables' => array(
@@ -60,24 +60,24 @@ function boston_theme() {
  * @param string $hook
  *   The name of the theme hook being called ("breadcrumb" in this case).
  *
- * @see boston_breadcrumb()
+ * @see bahstun_breadcrumb()
  */
-function boston_preprocess_breadcrumb(array &$variables, $hook) {
+function bahstun_preprocess_breadcrumb(array &$variables, $hook) {
   // Define variables for the breadcrumb-related theme settings. This is done
   // here so that sub-themes can dynamically change the settings under
   // particular conditions in a preprocess function of their own.
-  $variables['display_breadcrumb'] = check_plain(theme_get_setting('boston_breadcrumb'));
+  $variables['display_breadcrumb'] = check_plain(theme_get_setting('bahstun_breadcrumb'));
   $variables['display_breadcrumb'] = ($variables['display_breadcrumb'] == 'yes' || $variables['display_breadcrumb'] == 'admin' && arg(0) == 'admin') ? TRUE : FALSE;
-  $variables['breadcrumb_separator'] = filter_xss_admin(theme_get_setting('boston_breadcrumb_separator'));
-  $variables['display_trailing_separator'] = theme_get_setting('boston_breadcrumb_trailing') ? TRUE : FALSE;
+  $variables['breadcrumb_separator'] = filter_xss_admin(theme_get_setting('bahstun_breadcrumb_separator'));
+  $variables['display_trailing_separator'] = theme_get_setting('bahstun_breadcrumb_trailing') ? TRUE : FALSE;
 
   // Optionally get rid of the homepage link.
-  if (!theme_get_setting('boston_breadcrumb_home')) {
+  if (!theme_get_setting('bahstun_breadcrumb_home')) {
     array_shift($variables['breadcrumb']);
   }
 
   // Add the title of the page to the end of the breadcrumb list.
-  if (!empty($variables['breadcrumb']) && theme_get_setting('boston_breadcrumb_title')) {
+  if (!empty($variables['breadcrumb']) && theme_get_setting('bahstun_breadcrumb_title')) {
     $item = menu_get_item();
     if (!empty($item['tab_parent'])) {
       // If we are on a non-default tab, use the tab's title.
@@ -104,20 +104,20 @@ function boston_preprocess_breadcrumb(array &$variables, $hook) {
  *   An array of variables to pass to the theme template.
  * @param string $hook
  *   The name of the template being rendered. This is usually "html", but can
- *   also be "maintenance_page" since boston_preprocess_maintenance_page() calls
+ *   also be "maintenance_page" since bahstun_preprocess_maintenance_page() calls
  *   this function to have consistent variables.
  */
-function boston_preprocess_html(array &$variables, $hook) {
+function bahstun_preprocess_html(array &$variables, $hook) {
   // A variable to define the asset url
-  $variables['asset_url'] = variable_get('asset_url', 'https://patterns.boston.gov');
-  $variables['asset_name'] = $GLOBALS['theme'] == 'boston_hub' ? 'hub' : 'public';
+  $variables['asset_url'] = variable_get('asset_url', 'https://patterns.bahstun.gov');
+  $variables['asset_name'] = $GLOBALS['theme'] == 'bahstun_hub' ? 'hub' : 'public';
 
   // Add variables and paths needed for HTML5 and responsive support.
   $variables['base_path'] = base_path();
-  $variables['path_to_boston'] = drupal_get_path('theme', $GLOBALS['theme']);
+  $variables['path_to_bahstun'] = drupal_get_path('theme', $GLOBALS['theme']);
   // Get settings for HTML5 and responsive support. array_filter() removes
   // items from the array that have been disabled.
-  $meta = array_filter((array) theme_get_setting('boston_meta'));
+  $meta = array_filter((array) theme_get_setting('bahstun_meta'));
   $variables['add_html5_shim']          = in_array('html5', $meta);
   $variables['default_mobile_metatags'] = in_array('meta', $meta);
 
@@ -159,8 +159,8 @@ function boston_preprocess_html(array &$variables, $hook) {
     drupal_add_http_header('X-UA-Compatible', 'IE=edge,chrome=1');
   }
 
-  $variables['skip_link_anchor'] = check_plain(theme_get_setting('boston_skip_link_anchor'));
-  $variables['skip_link_text']   = check_plain(theme_get_setting('boston_skip_link_text'));
+  $variables['skip_link_anchor'] = check_plain(theme_get_setting('bahstun_skip_link_anchor'));
+  $variables['skip_link_text']   = check_plain(theme_get_setting('bahstun_skip_link_text'));
 
   // Return early, so the maintenance page does not call any of the code below.
   if ($hook != 'html') {
@@ -198,8 +198,8 @@ function boston_preprocess_html(array &$variables, $hook) {
 
   // When Panels is used on a site, Drupal's sidebar body classes will be wrong,
   // so override those with classes from a Panels layout preprocess.
-  // @see boston_preprocess_boston_main().
-  $panels_classes_array = &drupal_static('boston_panels_classes_array', array());
+  // @see bahstun_preprocess_bahstun_main().
+  $panels_classes_array = &drupal_static('bahstun_panels_classes_array', array());
   if (!empty($panels_classes_array)) {
     // Remove Drupal's sidebar classes.
     $variables['classes_array'] = array_diff($variables['classes_array'],
@@ -268,7 +268,7 @@ function boston_preprocess_html(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("html" in this case).
  */
-function boston_process_html(array &$variables, $hook) {
+function bahstun_process_html(array &$variables, $hook) {
   // Flatten out html_attributes.
   $variables['html_attributes'] = drupal_attributes($variables['html_attributes_array']);
 }
@@ -276,7 +276,7 @@ function boston_process_html(array &$variables, $hook) {
 /**
  * Override or insert variables in the html_tag theme function.
  */
-function boston_process_html_tag(array &$variables) {
+function bahstun_process_html_tag(array &$variables) {
   $tag = &$variables['element'];
 
   if ($tag['#tag'] == 'style' || $tag['#tag'] == 'script') {
@@ -298,7 +298,7 @@ function boston_process_html_tag(array &$variables) {
 /**
  * Implements hook_html_head_alter().
  */
-function boston_html_head_alter(&$head) {
+function bahstun_html_head_alter(&$head) {
   // Simplify the meta tag for character encoding.
   if (isset($head['system_meta_content_type']['#attributes']['content'])) {
     $head['system_meta_content_type']['#attributes'] = array(
@@ -319,7 +319,7 @@ function boston_html_head_alter(&$head) {
 /**
  * Implements hook_preprocess_page().
  */
-function boston_preprocess_page(array &$variables) {
+function bahstun_preprocess_page(array &$variables) {
   // Find the title of the menu used by the secondary links.
   $secondary_links = variable_get('menu_secondary_links_source', 'menu-secondary-menu');
   if ($secondary_links) {
@@ -367,8 +367,8 @@ function boston_preprocess_page(array &$variables) {
 /**
  * Implements hook_process_page().
  */
-function boston_process_page(&$variables) {
-  _boston_unset_page_title($variables);
+function bahstun_process_page(&$variables) {
+  _bahstun_unset_page_title($variables);
 }
 
 /**
@@ -379,16 +379,16 @@ function boston_process_page(&$variables) {
  * @param string $hook
  *   The name of the template being rendered ("maintenance_page" in this case).
  */
-function boston_preprocess_maintenance_page(array &$variables, $hook) {
-  boston_preprocess_html($variables, $hook);
-  // There's nothing maintenance-related in boston_preprocess_page(). Yet.
-  // boston_preprocess_page($variables, $hook);.
+function bahstun_preprocess_maintenance_page(array &$variables, $hook) {
+  bahstun_preprocess_html($variables, $hook);
+  // There's nothing maintenance-related in bahstun_preprocess_page(). Yet.
+  // bahstun_preprocess_page($variables, $hook);.
 }
 
 /**
  * Implements hook_preprocess_THEMEHOOK().
  */
-function boston_preprocess_views_exposed_form(&$variables) {
+function bahstun_preprocess_views_exposed_form(&$variables) {
   // Add a theme suggestion based on form id.
   $form_id = $variables['form']['#id'];
   // Offset by 19, accounting for: views-exposed-form-.
@@ -404,8 +404,8 @@ function boston_preprocess_views_exposed_form(&$variables) {
  * @param string $hook
  *   The name of the template being rendered ("maintenance_page" in this case).
  */
-function boston_process_maintenance_page(array &$variables, $hook) {
-  boston_process_html($variables, $hook);
+function bahstun_process_maintenance_page(array &$variables, $hook) {
+  bahstun_process_html($variables, $hook);
   // Ensure default regions get a variable. Theme authors often forget to remove
   // a deleted region's variable in maintenance-page.tpl.
   $regions = array(
@@ -434,9 +434,9 @@ function boston_process_maintenance_page(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("node" in this case).
  */
-function boston_preprocess_node(array &$variables, $hook) {
+function bahstun_preprocess_node(array &$variables, $hook) {
   // Add theme variable
-  $variables['theme'] = variable_get('theme_default', 'boston');
+  $variables['theme'] = variable_get('theme_default', 'bahstun');
 
   // Add theme hook suggestions for node.
   $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
@@ -482,24 +482,24 @@ function boston_preprocess_node(array &$variables, $hook) {
     $variables['classes_array'][] = 'with-hero';
   }
 
-  _boston_unset_node_wrappers($variables);
+  _bahstun_unset_node_wrappers($variables);
 
-  $bundle_preprocess = 'boston_preprocess_node_' . $variables['type'];
+  $bundle_preprocess = 'bahstun_preprocess_node_' . $variables['type'];
   if (function_exists($bundle_preprocess)) {
     $bundle_preprocess($variables);
   }
 
   if ($variables['type'] == 'listing_page') {
-    _boston_listing_page_title($variables);
+    _bahstun_listing_page_title($variables);
   }
 
 }
 
-function boston_preprocess_field_field_how_to_steps(&$variables) {
+function bahstun_preprocess_field_field_how_to_steps(&$variables) {
   $GLOBALS['how_to_step_count'] = 1;
 }
 
-function boston_preprocess_paragraphs_item_how_to_text_step(&$variables) {
+function bahstun_preprocess_paragraphs_item_how_to_text_step(&$variables) {
   $variables['how_to_step_count'] = $GLOBALS['how_to_step_count'];
   $GLOBALS['how_to_step_count']++;
 }
@@ -507,8 +507,8 @@ function boston_preprocess_paragraphs_item_how_to_text_step(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_paragraphs_item_how_to_contact_step(&$variables) {
-  _boston_unset_node_wrappers($variables);
+function bahstun_preprocess_paragraphs_item_how_to_contact_step(&$variables) {
+  _bahstun_unset_node_wrappers($variables);
 
   $variables['how_to_step_count'] = $GLOBALS['how_to_step_count'];
   $GLOBALS['how_to_step_count']++;
@@ -517,7 +517,7 @@ function boston_preprocess_paragraphs_item_how_to_contact_step(&$variables) {
 /**
  * Check whether a group_of_links_* paragraph has an empty left region.
  */
-function _boston_paragrpahs_item_group_of_links_is_left_region_empty($paragraph) {
+function _bahstun_paragrpahs_item_group_of_links_is_left_region_empty($paragraph) {
   // Check whether the fields displayed on the left are empty.
   $fields = array(
     'field_call_to_action',
@@ -540,8 +540,8 @@ function _boston_paragrpahs_item_group_of_links_is_left_region_empty($paragraph)
 /**
  * Implements hook_preprocess_ENTITY_TYPE_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_group_of_links_list(&$variables) {
-  $all_fields_empty = _boston_paragrpahs_item_group_of_links_is_left_region_empty($variables['paragraphs_item']);
+function bahstun_preprocess_paragraphs_item_group_of_links_list(&$variables) {
+  $all_fields_empty = _bahstun_paragrpahs_item_group_of_links_is_left_region_empty($variables['paragraphs_item']);
 
   // Let the template know the status of the left region.
   $variables['left_region_is_empty'] = ($all_fields_empty) ? TRUE : FALSE;
@@ -550,8 +550,8 @@ function boston_preprocess_paragraphs_item_group_of_links_list(&$variables) {
 /**
  * Implements hook_preprocess_ENTITY_TYPE_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_group_of_links_grid(&$variables) {
-  $all_fields_empty = _boston_paragrpahs_item_group_of_links_is_left_region_empty($variables['paragraphs_item']);
+function bahstun_preprocess_paragraphs_item_group_of_links_grid(&$variables) {
+  $all_fields_empty = _bahstun_paragrpahs_item_group_of_links_is_left_region_empty($variables['paragraphs_item']);
 
   // Let the template know the status of the left region.
   $variables['left_region_is_empty'] = ($all_fields_empty) ? TRUE : FALSE;
@@ -572,12 +572,12 @@ function boston_preprocess_paragraphs_item_group_of_links_grid(&$variables) {
 /**
  * Implements hook_preprocess_node_BUNDLE().
  */
-function boston_preprocess_field_collection_item_field_grid_links(&$variables) {
+function bahstun_preprocess_field_collection_item_field_grid_links(&$variables) {
   // The #num_of_cols variable can be set to modify the number of columns used
   // in the template where links are placed. This setting is used by the 'Group
   // of links - Grid' component to allow more links to be shown in one row
   // when the left side of the display is empty. Look at
-  // boston_preprocess_paragraphs_item_group_of_links_grid for more information.
+  // bahstun_preprocess_paragraphs_item_group_of_links_grid for more information.
   if (isset($variables['elements']['#num_of_cols'])) {
     $variables['classes_array'][] = "desktop-{$variables['elements']['#num_of_cols']}-col";
   }
@@ -586,7 +586,7 @@ function boston_preprocess_field_collection_item_field_grid_links(&$variables) {
   }
 }
 
-function boston_preprocess_accessibility_toolbar(&$variables) {
+function bahstun_preprocess_accessibility_toolbar(&$variables) {
   // Set the menus for accessibility and translation
   $variables['accessibilityMenu'] = menu_navigation_links('menu-accessibility-menu');
   $variables['translationMenu'] = menu_navigation_links('menu-translation-menu');
@@ -595,7 +595,7 @@ function boston_preprocess_accessibility_toolbar(&$variables) {
 /**
  * Implements hook_preprocess_node_BUNDLE().
  */
-function boston_preprocess_node_event(&$variables) {
+function bahstun_preprocess_node_event(&$variables) {
   $time_range_view_modes = array(
     'calendar_listing',
     'full',
@@ -621,7 +621,7 @@ function boston_preprocess_node_event(&$variables) {
       // the full render of the date since it will need to be displayed in a
       // different place than the date.
       if (!empty($dates[0]['rrule'])) {
-        $variables['repeat_rule'] = boston_date_repeat_rrule_description($dates[0]['rrule']);
+        $variables['repeat_rule'] = bahstun_date_repeat_rrule_description($dates[0]['rrule']);
       }
     }
     else {
@@ -633,7 +633,7 @@ function boston_preprocess_node_event(&$variables) {
 /**
  * Implements hook_preprocess_node_BUNDLE().
  */
-function boston_preprocess_node_topic_page(array &$variables) {
+function bahstun_preprocess_node_topic_page(array &$variables) {
   if (isset($variables['field_thumbnail']) && $variables['view_mode'] == 'featured_topics') {
     // The field field_thumbnail on the Featured Guides view mode for Topic
     // content uses the Image URL formatter, so the render value will be a URL
@@ -702,7 +702,7 @@ function boston_preprocess_node_topic_page(array &$variables) {
 /**
  * Implements hook_preprocess_node_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_message_for_the_day(&$variables) {
+function bahstun_preprocess_paragraphs_item_message_for_the_day(&$variables) {
   $message = $variables['paragraphs_item'];
   $host = _get_message_host($message);
 
@@ -737,7 +737,7 @@ function boston_preprocess_paragraphs_item_message_for_the_day(&$variables) {
         $override_message_info = bos_core_field_get_first_item('paragraphs_item', $status_override, 'field_override_message');
         if ($override_message_info) {
           $override_message = paragraphs_item_load($override_message_info['value']);
-          boston_override_message($message, $override_message, $variables);
+          bahstun_override_message($message, $override_message, $variables);
         }
       }
     }
@@ -763,7 +763,7 @@ function boston_preprocess_paragraphs_item_message_for_the_day(&$variables) {
 /**
  * Replaces status message fields with emergency override message fields.
  */
-function boston_override_message($message, $override, &$variables) {
+function bahstun_override_message($message, $override, &$variables) {
   $relevant_fields = array(
     'field_use_alert',
     'field_message',
@@ -788,7 +788,7 @@ function boston_override_message($message, $override, &$variables) {
  * @param string $hook
  *   The name of the template being rendered ("comment" in this case.
  */
-function boston_preprocess_comment(array &$variables, $hook) {
+function bahstun_preprocess_comment(array &$variables, $hook) {
   // Add $unpublished variable.
   $variables['unpublished'] = ($variables['status'] == 'comment-unpublished') ? TRUE : FALSE;
 
@@ -837,12 +837,12 @@ function boston_preprocess_comment(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("region" in this case).
  */
-function boston_preprocess_region(array &$variables, $hook) {
+function bahstun_preprocess_region(array &$variables, $hook) {
   // Sidebar regions get some extra classes and a common template suggestion.
   if (strpos($variables['region'], 'sidebar_') === 0) {
     $variables['classes_array'][] = 'column';
     $variables['classes_array'][] = 'sidebars';
-    // Allow a region-specific template to override boston's region--sidebar.
+    // Allow a region-specific template to override bahstun's region--sidebar.
     array_unshift($variables['theme_hook_suggestions'], 'region__sidebar');
   }
 
@@ -856,7 +856,7 @@ function boston_preprocess_region(array &$variables, $hook) {
 
   // Use a template with no wrapper for the content region.
   elseif ($variables['region'] == 'content') {
-    // Allow a region-specific template to override boston's region--no-wrapper.
+    // Allow a region-specific template to override bahstun's region--no-wrapper.
     array_unshift($variables['theme_hook_suggestions'], 'region__no_wrapper');
   }
   // Add a SMACSS-style class for header region.
@@ -868,7 +868,7 @@ function boston_preprocess_region(array &$variables, $hook) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_taxonomy_term(array &$variables, $hook) {
+function bahstun_preprocess_taxonomy_term(array &$variables, $hook) {
   $variables['theme_hook_suggestions'][] = 'taxonomy_term__' . $variables['view_mode'];
   $variables['theme_hook_suggestions'][] = 'taxonomy_term__' . $variables['vocabulary_machine_name'] . '__' . $variables['view_mode'];
 }
@@ -881,7 +881,7 @@ function boston_preprocess_taxonomy_term(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("block" in this case).
  */
-function boston_preprocess_block(array &$variables, $hook) {
+function bahstun_preprocess_block(array &$variables, $hook) {
   // Use a template with no wrapper for the page's main content.
   if ($variables['block_html_id'] == 'block-system-main') {
     $variables['theme_hook_suggestions'][] = 'block__no_wrapper';
@@ -891,7 +891,7 @@ function boston_preprocess_block(array &$variables, $hook) {
   if ($variables['block_id'] == 1) {
     $variables['classes_array'][] = 'first';
   }
-  // The last_in_region property is set in boston_page_alter().
+  // The last_in_region property is set in bahstun_page_alter().
   if (isset($variables['block']->last_in_region)) {
     $variables['classes_array'][] = 'last';
   }
@@ -977,7 +977,7 @@ function boston_preprocess_block(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("block" in this case).
  */
-function boston_process_block(array &$variables, $hook) {
+function bahstun_process_block(array &$variables, $hook) {
   // Drupal 7 should use a $title variable instead of $block->subject.
   $variables['title'] = isset($variables['block']->subject) ? $variables['block']->subject : '';
 }
@@ -988,7 +988,7 @@ function boston_process_block(array &$variables, $hook) {
  * Look for the last block in the region. This is impossible to determine from
  * within a preprocess_block function.
  */
-function boston_page_alter(array &$page) {
+function bahstun_page_alter(array &$page) {
   // Look in each visible region for blocks.
   foreach (system_region_list($GLOBALS['theme'], REGIONS_VISIBLE) as $region => $name) {
     if (!empty($page[$region])) {
@@ -1010,7 +1010,7 @@ function boston_page_alter(array &$page) {
  * Prevent user-facing field styling from screwing up node edit forms by
  * renaming the classes on the node edit form's field wrappers.
  */
-function boston_form_node_form_alter(&$form, &$form_state, $form_id) {
+function bahstun_form_node_form_alter(&$form, &$form_state, $form_id) {
   // Remove if #1245218 is backported to D7 core.
   foreach (array_keys($form) as $item) {
     if (strpos($item, 'field_') === 0) {
@@ -1032,7 +1032,7 @@ function boston_form_node_form_alter(&$form, &$form_state, $form_id) {
 /**
  * Implements hook_form_alter().
  */
-function boston_form_alter(&$form, $form_state, $form_id) {
+function bahstun_form_alter(&$form, $form_state, $form_id) {
   // Add the name of views with exposed filters to this list
   // that should appear with the bos_search styling.
   if (!empty($form_state['view'])) {
@@ -1070,7 +1070,7 @@ function boston_form_alter(&$form, $form_state, $form_id) {
 /**
  * Implements template_preprocess_menu_tree().
  */
-function boston_preprocess_menu_tree(&$variables) {
+function bahstun_preprocess_menu_tree(&$variables) {
   $tree = $variables['tree'];
   $variables['menu_classes'] = strpos($tree, '<li class="menu-item-back"') === 0 ? 'menu submenu' : 'menu';
 }
@@ -1078,7 +1078,7 @@ function boston_preprocess_menu_tree(&$variables) {
 /**
  * Implements hook_preprocess_menu_link().
  */
-function boston_preprocess_menu_link(array &$variables, $hook) {
+function bahstun_preprocess_menu_link(array &$variables, $hook) {
   // Normalize menu item classes to be an array.
   if (empty($variables['element']['#attributes']['class'])) {
     $variables['element']['#attributes']['class'] = array();
@@ -1144,14 +1144,14 @@ function boston_preprocess_menu_link(array &$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("block" in this case).
  */
-function boston_preprocess_panels_pane(array &$variables, $hook) {
+function bahstun_preprocess_panels_pane(array &$variables, $hook) {
   // Use no pane wrapper for common page elements.
   switch ($variables['pane']->subtype) {
     case 'page_content':
     case 'pane_header':
     case 'pane_messages':
     case 'pane_navigation':
-      // Allow a pane-specific template to override boston's suggestion.
+      // Allow a pane-specific template to override bahstun's suggestion.
       array_unshift($variables['theme_hook_suggestions'], 'panels_pane__no_wrapper');
       break;
   }
@@ -1162,7 +1162,7 @@ function boston_preprocess_panels_pane(array &$variables, $hook) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_entity(&$variables, $hook) {
+function bahstun_preprocess_entity(&$variables, $hook) {
   if ($variables['entity_type'] === 'paragraphs_item') {
 
     $title_optional_bundles = _bos_core_get_components();
@@ -1174,8 +1174,8 @@ function boston_preprocess_entity(&$variables, $hook) {
       }
     }
 
-    $paragraph_preprocess = 'boston_preprocess_paragraphs_item';
-    $paragraph_bundle_preprocess = 'boston_preprocess_paragraphs_item_' . $variables['elements']['#bundle'];
+    $paragraph_preprocess = 'bahstun_preprocess_paragraphs_item';
+    $paragraph_bundle_preprocess = 'bahstun_preprocess_paragraphs_item_' . $variables['elements']['#bundle'];
     if (function_exists($paragraph_preprocess)) {
       $paragraph_preprocess($variables);
     }
@@ -1185,7 +1185,7 @@ function boston_preprocess_entity(&$variables, $hook) {
   }
   elseif ($variables['entity_type'] === 'field_collection_item') {
     $bundle = $variables['elements']['#bundle'];
-    $function = 'boston_preprocess_field_collection_item_' . $bundle;
+    $function = 'bahstun_preprocess_field_collection_item_' . $bundle;
     if (function_exists($function)) {
       $function($variables);
     }
@@ -1195,7 +1195,7 @@ function boston_preprocess_entity(&$variables, $hook) {
 /**
  * Implements hook_preprocess_file_entity().
  */
-function boston_preprocess_file_entity(&$variables) {
+function bahstun_preprocess_file_entity(&$variables) {
   $bundle_preprocess = __FUNCTION__ . '_' . $variables['type'];
   if (function_exists($bundle_preprocess)) {
     $bundle_preprocess($variables);
@@ -1205,7 +1205,7 @@ function boston_preprocess_file_entity(&$variables) {
 /**
  * Implements hook_preprocess_file_entity_TYPE().
  */
-function boston_preprocess_file_entity_image(&$variables) {
+function bahstun_preprocess_file_entity_image(&$variables) {
   if (!empty($variables['content']['field_image_caption'])) {
     // If the image caption is specified then we want to capture the output of
     // it and expose it in a template variable.
@@ -1217,7 +1217,7 @@ function boston_preprocess_file_entity_image(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item().
  */
-function boston_preprocess_paragraphs_item(&$variables) {
+function bahstun_preprocess_paragraphs_item(&$variables) {
   // Media bundles.
   $media_bundles = array(
     'sidebar_item',
@@ -1235,7 +1235,7 @@ function boston_preprocess_paragraphs_item(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_list(&$variables) {
+function bahstun_preprocess_paragraphs_item_list(&$variables) {
   // Add a class to the list entity wrapper indicating which view the
   // list is displaying. This is needed to target things like background
   // color for the component.
@@ -1249,7 +1249,7 @@ function boston_preprocess_paragraphs_item_list(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_document(&$variables) {
+function bahstun_preprocess_paragraphs_item_document(&$variables) {
   $variables['document_link'] = $variables['content']['field_document'][0]['#markup'];
   $variables['document_filename'] = $variables['content']['field_document']['#items'][0]['filename'];
 }
@@ -1257,7 +1257,7 @@ function boston_preprocess_paragraphs_item_document(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_iframe().
  */
-function boston_preprocess_paragraphs_item_iframe(&$variables) {
+function bahstun_preprocess_paragraphs_item_iframe(&$variables) {
   $iframe_height = $variables['content']['field_iframe_size']["#items"][0]['value'];
   $variables['iframe_height'] = $variables['content']['field_iframe_size']["#items"][0]['value'] !== "0" ? $iframe_height . 'px' : false;
 
@@ -1267,11 +1267,11 @@ function boston_preprocess_paragraphs_item_iframe(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_iframe().
  */
-function boston_preprocess_paragraphs_item_video(&$variables) {
+function bahstun_preprocess_paragraphs_item_video(&$variables) {
   drupal_add_js('https://www.youtube.com/iframe_api');
 }
 
-function boston_preprocess_field_collection_item_field_transactions(&$variables) {
+function bahstun_preprocess_field_collection_item_field_transactions(&$variables) {
   // We need to get the icon for these and insert them into the link
   $link_icon = &drupal_static("link_icon", null);
 
@@ -1297,7 +1297,7 @@ function boston_preprocess_field_collection_item_field_transactions(&$variables)
 /**
  * Implements hook_preprocess_paragraphs_item_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_internal_link(&$variables) {
+function bahstun_preprocess_paragraphs_item_internal_link(&$variables) {
   $internal_link = field_get_items('paragraphs_item', $variables['paragraphs_item'], 'field_internal_link');
   $link_icon = drupal_static("link_icon", null);
 
@@ -1320,7 +1320,7 @@ function boston_preprocess_paragraphs_item_internal_link(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_external_link(&$variables) {
+function bahstun_preprocess_paragraphs_item_external_link(&$variables) {
   $external_link = field_get_items('paragraphs_item', $variables['paragraphs_item'], 'field_external_link');
   $link_icon = drupal_static("link_icon", null);
 
@@ -1342,7 +1342,7 @@ function boston_preprocess_paragraphs_item_external_link(&$variables) {
 /**
  * Implements hook_preprocess_paragraphs_item_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_header_text(&$variables) {
+function bahstun_preprocess_paragraphs_item_header_text(&$variables) {
   // In some cases we will need to bring the host content title into the
   // header text component so we can display it within the header text component
   // template.
@@ -1356,7 +1356,7 @@ function boston_preprocess_paragraphs_item_header_text(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_paragraphs_item_text_two_column(&$variables) {
+function bahstun_preprocess_paragraphs_item_text_two_column(&$variables) {
   $layout = field_get_items('paragraphs_item', $variables['paragraphs_item'], 'field_column_configuration');
   if ($layout !== FALSE) {
     $variables['classes_array'][] = $layout['0']['value'];
@@ -1366,7 +1366,7 @@ function boston_preprocess_paragraphs_item_text_two_column(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_field(&$variables, $hook) {
+function bahstun_preprocess_field(&$variables, $hook) {
   $suggestions = &$variables['theme_hook_suggestions'];
   $view_mode = $variables['element']['#view_mode'];
   $bundle = $variables['element']['#bundle'];
@@ -1383,7 +1383,7 @@ function boston_preprocess_field(&$variables, $hook) {
   if ($is_subcomponent_field) {
     $suggestions[] = 'field__subcomponent__' . $variables['element']['#field_name'];
   }
-  $field_name_preprocess = "boston_preprocess_field_$field_name";
+  $field_name_preprocess = "bahstun_preprocess_field_$field_name";
   $base_suggestion = "field__$field_name";
   // Add view mode suggestions.
   $suggestions[] = "{$base_suggestion}__mode__{$view_mode}";
@@ -1398,7 +1398,7 @@ function boston_preprocess_field(&$variables, $hook) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_field_field_intro_text(&$variables) {
+function bahstun_preprocess_field_field_intro_text(&$variables) {
   $variables['classes_array'] = "";
   $variables['classes_array'][] = "intro-text";
   $view_mode = $variables['element']['#view_mode'];
@@ -1426,7 +1426,7 @@ function boston_preprocess_field_field_intro_text(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_field_field_component_title(&$variables) {
+function bahstun_preprocess_field_field_component_title(&$variables) {
   if ($variables['is_component_field']) {
     $component = $variables['element']['#object'];
     $short_title = field_get_items('paragraphs_item', $component, 'field_short_title');
@@ -1439,7 +1439,7 @@ function boston_preprocess_field_field_component_title(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_paragraphs_item_text(&$variables) {
+function bahstun_preprocess_paragraphs_item_text(&$variables) {
   // Provide a class on the text paragraph entity wrapper indicating what
   // the background image of the component should be, if one is specified.
   $background_image = field_get_items('paragraphs_item', $variables['paragraphs_item'], 'field_background_image');
@@ -1451,7 +1451,7 @@ function boston_preprocess_paragraphs_item_text(&$variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function boston_preprocess_paragraphs_item_quote(&$variables) {
+function bahstun_preprocess_paragraphs_item_quote(&$variables) {
 
   if (!isset($variables['field_person_photo'])) {
     $variables['field_default_person_photo'] = '<img src="/' . drupal_get_path('theme', $GLOBALS['theme']) . '/dist/img/quote-default-image.svg" alt="No picture available">';
@@ -1464,7 +1464,7 @@ function boston_preprocess_paragraphs_item_quote(&$variables) {
 /**
  * Implements hook_preprocess_views_view().
  */
-function boston_preprocess_views_view(&$variables) {
+function bahstun_preprocess_views_view(&$variables) {
   // Add view names to this list which should have exposed filters
   // in a sidebar.
   $view_name = $variables['view']->name;
@@ -1494,7 +1494,7 @@ function boston_preprocess_views_view(&$variables) {
 /**
  * Implements hook_preprocess_views_view().
  */
-function boston_preprocess_views_view_status_displays(&$variables) {
+function bahstun_preprocess_views_view_status_displays(&$variables) {
   // Check if the header should be overriden by an emergency.
   if ($emergency_id = bos_core_active_emergency()) {
     $emergency = node_load($emergency_id);
@@ -1508,7 +1508,7 @@ function boston_preprocess_views_view_status_displays(&$variables) {
     // Get the last updated date.
     $last_updated = ($item = bos_core_field_get_first_item('node', $emergency, 'field_updated_date')) ? $item['value'] : "";
     $last_updated = strtotime($last_updated);
-    $last_updated = format_date($last_updated, 'boston_emergency_updated');
+    $last_updated = format_date($last_updated, 'bahstun_emergency_updated');
 
     // Get the emergency description.
     $description = ($item = bos_core_field_get_first_item('node', $emergency, 'field_description')) ? $item['value'] : "";
@@ -1559,13 +1559,13 @@ function boston_preprocess_views_view_status_displays(&$variables) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function boston_form_advpoll_choice_form_alter(&$form, &$form_state) {
+function bahstun_form_advpoll_choice_form_alter(&$form, &$form_state) {
   // For each form field, add a boolean to indicate this is a poll form. This
   // way, the ID can be removed in theme functions based on if the parent form
   // is a poll or not.
   foreach ($form as $key => $item) {
     if (strpos($key, '#') !== 0 && $key !== 'submit') {
-      $form[$key]['#process'][] = 'boston_advpoll_ids';
+      $form[$key]['#process'][] = 'bahstun_advpoll_ids';
     }
   }
 }
@@ -1579,7 +1579,7 @@ function boston_form_advpoll_choice_form_alter(&$form, &$form_state) {
  * @param array $variables
  *   The variables to use.
  */
-function boston_advpoll_ids($variables) {
+function bahstun_advpoll_ids($variables) {
   if (isset($variables['element']['#id'])) {
     $variables['element']['#id'] .= '--' . rand();
   }
@@ -1589,7 +1589,7 @@ function boston_advpoll_ids($variables) {
 /**
  * Implements hook_preprocess_node_BUNDLE().
  */
-function boston_preprocess_paragraphs_item_fyi(&$variables) {
+function bahstun_preprocess_paragraphs_item_fyi(&$variables) {
   $file = render($variables['content']['field_icon']);
   if (!empty($file)) {
     $variables['icon'] = file_get_contents(drupal_realpath(trim($file)));

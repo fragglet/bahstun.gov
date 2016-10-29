@@ -15,10 +15,10 @@ multisite:
 project:
   profile:
     name: bos_profile
-  cloud_alias: @boston
+  cloud_alias: @bahstun
   themes:
-    - boston
-    - boston_public
+    - bahstun
+    - bahstun_public
   # Set this to 'initialize' to start a fresh install.
   # Otherwise set it to sync to sync from the stg environment.
   build_db_from: sync

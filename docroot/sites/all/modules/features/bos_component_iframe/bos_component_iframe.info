@@ -1,4 +1,4 @@
-name = Boston Component iFrame
+name = Bahstun Component iFrame
 core = 7.x
 package = Features
 dependencies[] = bos_shared_fields

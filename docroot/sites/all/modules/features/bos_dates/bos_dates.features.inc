@@ -32,10 +32,10 @@ function bos_dates_fe_date_custom_date_formats() {
  */
 function bos_dates_date_format_types() {
   $format_types = array();
-  // Exported date format type: boston_featured
-  $format_types['boston_featured'] = 'Boston Featured';
-  // Exported date format type: boston_short
-  $format_types['boston_short'] = 'Boston Short';
+  // Exported date format type: bahstun_featured
+  $format_types['bahstun_featured'] = 'Bahstun Featured';
+  // Exported date format type: bahstun_short
+  $format_types['bahstun_short'] = 'Bahstun Short';
   // Exported date format type: calendar_time
   $format_types['calendar_time'] = 'Calendar Time';
   // Exported date format type: file_directory_storage_date

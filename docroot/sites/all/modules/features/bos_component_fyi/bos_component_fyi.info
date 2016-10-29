@@ -1,4 +1,4 @@
-name = Boston FYI Component
+name = Bahstun FYI Component
 core = 7.x
 package = Features
 dependencies[] = bos_shared_fields

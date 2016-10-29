@@ -1,7 +1,7 @@
-name = Boston Landing Page Content Type
+name = Bahstun Landing Page Content Type
 description = Definition of Landing Page content type
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = bos_pathauto
 dependencies[] = bos_shared_fields

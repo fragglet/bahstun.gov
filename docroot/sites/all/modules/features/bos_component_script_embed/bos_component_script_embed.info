@@ -1,4 +1,4 @@
-name = Boston Script Embed
+name = Bahstun Script Embed
 core = 7.x
 package = Features
 dependencies[] = bos_component_iframe

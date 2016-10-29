@@ -1061,7 +1061,7 @@ function bos_content_type_program_initiative_profile_field_default_field_instanc
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1408,7 +1408,7 @@ function bos_content_type_program_initiative_profile_field_default_field_instanc
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',

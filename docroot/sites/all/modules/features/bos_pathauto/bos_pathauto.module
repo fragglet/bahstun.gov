@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Pathauto Settings feature.
+ * Code for the Bahstun Pathauto Settings feature.
  */
 
 include_once 'bos_pathauto.features.inc';

@@ -1,5 +1,5 @@
-name = Boston Component Group of Links - Mini Grid
-description = Boston Component Group of Links - Mini Grid
+name = Bahstun Component Group of Links - Mini Grid
+description = Bahstun Component Group of Links - Mini Grid
 core = 7.x
 package = Features
 dependencies[] = bos_component_gol_grid

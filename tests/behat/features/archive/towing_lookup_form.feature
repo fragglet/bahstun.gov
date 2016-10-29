@@ -31,7 +31,7 @@ Feature: Towing Lookup Form
     Then I should see the text "Error: Valid Plate Required (3 to 8 letters and digits, no spaces or dashes)."
 
   @javascript
-  Scenario: Verify submitting towing form redirects to www.cityofboston.gov/towing/search?plate=<plate>.
+  Scenario: Verify submitting towing form redirects to www.cityofbahstun.gov/towing/search?plate=<plate>.
     Given I am on "having-car-city"
     Then I should see the text "Your License Plate"
     And I fill in "edit-license-plate" with "1ab1234"
@@ -41,5 +41,5 @@ Feature: Towing Lookup Form
     Then I should not see the text "Error: Valid Plate Required (3 to 8 letters and digits, no spaces or dashes)."
     # Submission of this form opens in a new window, so we need to follow it.
     When I switch to popup
-    Then I should be on "http://www.cityofboston.gov/towing/search/?plate=1ab1234"
+    Then I should be on "http://www.cityofbahstun.gov/towing/search/?plate=1ab1234"
     And the "txtPlate" field should contain "1ab1234"

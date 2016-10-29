@@ -1,7 +1,7 @@
-name = Boston Group of Links - List Component
+name = Bahstun Group of Links - List Component
 description = Provides the "Group of Links - List" component for use on topic and landing pages.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = advanced_text_formatter
 dependencies[] = bos_shared_fields

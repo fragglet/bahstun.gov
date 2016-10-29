@@ -1,7 +1,7 @@
-name = Boston Component Upcoming Events
+name = Bahstun Component Upcoming Events
 description = Upcoming Events component.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

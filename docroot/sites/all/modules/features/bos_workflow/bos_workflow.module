@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Workflow feature.
+ * Code for the Bahstun Workflow feature.
  */
 
 include_once 'bos_workflow.features.inc';
@@ -15,7 +15,7 @@ function bos_workflow_views_default_views_alter(&$views) {
   // site, and must also not include content types that are being handled in
   // other views.
   $type_filter_exception_by_view = array(
-    'boston_recent_content' => array(
+    'bahstun_recent_content' => array(
       'displays' => array(
         'default',
       ),
@@ -42,7 +42,7 @@ function bos_workflow_views_default_views_alter(&$views) {
   // @codingStandardsIgnoreStart
   // $views_to_disable_per_site = array(
   //   'hub' => array(
-  //     'boston_events',
+  //     'bahstun_events',
   //   ),
   // );
   // @codingStandardsIgnoreEnd

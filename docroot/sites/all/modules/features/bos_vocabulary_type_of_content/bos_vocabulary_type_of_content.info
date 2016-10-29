@@ -1,7 +1,7 @@
-name = Boston Vocabulary Type of Content
-description = Boston Vocabulary Type of Content
+name = Bahstun Vocabulary Type of Content
+description = Bahstun Vocabulary Type of Content
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

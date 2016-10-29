@@ -1,6 +1,6 @@
-name = Boston Settings IMCE
+name = Bahstun Settings IMCE
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1

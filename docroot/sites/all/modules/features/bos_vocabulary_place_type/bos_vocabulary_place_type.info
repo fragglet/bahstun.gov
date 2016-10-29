@@ -1,7 +1,7 @@
-name = Boston vocabulary Place Type
-description = Boston vocabulary Place Type
+name = Bahstun vocabulary Place Type
+description = Bahstun vocabulary Place Type
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

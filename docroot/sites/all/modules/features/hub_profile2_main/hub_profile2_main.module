@@ -87,7 +87,7 @@ function hub_profile2_main_preprocess_entity(&$variables) {
       $field_work_email = $variables['field_work_email'][0]['safe_value'];
 
       if ($field_work_email === NULL) {
-        $field_work_email = 'default@boston.gov';
+        $field_work_email = 'default@bahstun.gov';
       }
 
       $variables['field_work_email'] = strtolower($field_work_email);

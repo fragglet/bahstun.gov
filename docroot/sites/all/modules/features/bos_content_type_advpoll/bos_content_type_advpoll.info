@@ -1,7 +1,7 @@
-name = Boston Advanced Poll Content Type
-description = Defines advanced poll data for the Boston.gov site.
+name = Bahstun Advanced Poll Content Type
+description = Defines advanced poll data for the Bahstun.gov site.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = advpoll
 dependencies[] = advpoll_field
 dependencies[] = bos_shared_fields

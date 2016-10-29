@@ -46,7 +46,7 @@ function bos_meta_tags_metatag_export_default() {
         'value' => '[node:changed:custom:c]',
       ),
       'twitter:creator' => array(
-        'value' => '@CityOfBoston',
+        'value' => '@CityOfBahstun',
       ),
       'twitter:creator:id' => array(
         'value' => 124455872,

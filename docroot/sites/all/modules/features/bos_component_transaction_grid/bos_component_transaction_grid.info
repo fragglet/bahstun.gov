@@ -1,7 +1,7 @@
-name = Boston Component Transaction Grid
+name = Bahstun Component Transaction Grid
 description = A component for a Grid of Transactions.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = background_image_formatter
 dependencies[] = bos_shared_fields
 dependencies[] = ctools

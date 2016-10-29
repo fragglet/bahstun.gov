@@ -1,7 +1,7 @@
-name = Boston Component Featured Guides
+name = Bahstun Component Featured Guides
 description = Component for Featured Guides
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

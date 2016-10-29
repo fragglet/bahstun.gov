@@ -1,6 +1,6 @@
-name = Boston Content Type Emergency Alert
+name = Bahstun Content Type Emergency Alert
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.5
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
@@ -43,4 +43,4 @@ features[variable][] = rh_node_action_emergency_alert
 features[variable][] = rh_node_override_emergency_alert
 features[variable][] = rh_node_redirect_emergency_alert
 features[variable][] = rh_node_redirect_response_emergency_alert
-features[views_view][] = boston_emergencies
+features[views_view][] = bahstun_emergencies

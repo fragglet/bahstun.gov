@@ -2,7 +2,7 @@
 
 module.exports = function (gulp, plugins, options) {
   let paths = [
-    options.boston + '/src/vendor-js/iframe/*.js',
+    options.bahstun + '/src/vendor-js/iframe/*.js',
     options.scripts_vendor + '/iframe/*.js'
   ]
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston View Guides Landing Page feature.
+ * Code for the Bahstun View Guides Landing Page feature.
  */
 
 include_once 'bos_view_topics_landing_page.features.inc';

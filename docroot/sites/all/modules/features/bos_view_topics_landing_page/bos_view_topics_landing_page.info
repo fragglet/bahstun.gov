@@ -1,7 +1,7 @@
-name = Boston View Guides Landing Page
-description = Boston View Guides Landing Page
+name = Bahstun View Guides Landing Page
+description = Bahstun View Guides Landing Page
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = better_exposed_filters
 dependencies[] = entity
 dependencies[] = views

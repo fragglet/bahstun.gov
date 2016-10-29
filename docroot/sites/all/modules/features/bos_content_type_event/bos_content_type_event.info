@@ -1,7 +1,7 @@
-name = Boston Content Type Event
-description = Boston Content Type Event
+name = Bahstun Content Type Event
+description = Bahstun Content Type Event
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = addressfield
 dependencies[] = bos_shared_fields

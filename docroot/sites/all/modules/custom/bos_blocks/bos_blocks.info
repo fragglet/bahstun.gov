@@ -1,4 +1,4 @@
-name = Boston Blocks
-description = Custom blocks for the Boston site.
+name = Bahstun Blocks
+description = Custom blocks for the Bahstun site.
 core = 7.x
-package = Boston
+package = Bahstun

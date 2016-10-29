@@ -1,7 +1,7 @@
-name = Boston Vocabulary News Tags
-description = Boston Vocabulary News Tags
+name = Bahstun Vocabulary News Tags
+description = Bahstun Vocabulary News Tags
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

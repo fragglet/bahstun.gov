@@ -1,7 +1,7 @@
-name = Boston Global Footer
+name = Bahstun Global Footer
 description = Control the placement of blocks in the footer.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = block
 dependencies[] = bos_menu_footer_menu
 dependencies[] = context

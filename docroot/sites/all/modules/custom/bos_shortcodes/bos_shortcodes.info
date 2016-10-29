@@ -1,5 +1,5 @@
-name = Boston Shortcodes
+name = Bahstun Shortcodes
 core = 7.x
-package = Boston Custom
-description = Defines Shortcodes for the Boston.gov site.
+package = Bahstun Custom
+description = Defines Shortcodes for the Bahstun.gov site.
 dependencies[] = shortcode

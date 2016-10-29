@@ -1,7 +1,7 @@
-name = Boston Content Type Status Item
+name = Bahstun Content Type Status Item
 description = Feature for controlling the Status Item content type.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = date

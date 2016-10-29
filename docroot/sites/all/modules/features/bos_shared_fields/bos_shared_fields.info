@@ -1,7 +1,7 @@
-name = Boston Shared Fields
-description = Shared fields for Boston.gov.
+name = Bahstun Shared Fields
+description = Shared fields for Bahstun.gov.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.4
 dependencies[] = addressfield
 dependencies[] = advpoll_field

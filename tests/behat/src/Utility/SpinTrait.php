@@ -4,12 +4,12 @@
  * Contains SpinTrait trait.
  */
 
-namespace Boston\Utility;
+namespace Bahstun\Utility;
 
 /**
  * Class SpinTrait.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 trait SpinTrait {
 

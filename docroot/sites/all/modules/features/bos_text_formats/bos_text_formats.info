@@ -1,7 +1,7 @@
-name = Boston Text Formats
-description = Handles text format definitions for the boston.gov website.
+name = Bahstun Text Formats
+description = Handles text format definitions for the bahstun.gov website.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = ctools
 dependencies[] = features

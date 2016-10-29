@@ -1,4 +1,4 @@
-name = Boston Subcomponent Seamless Doc
+name = Bahstun Subcomponent Seamless Doc
 core = 7.x
 package = Features
 dependencies[] = features

@@ -7,7 +7,7 @@ those styles in the hub's theme.
 
 This will need to be handled in a case by case basis.
 
-Currently the style.css file is commented out in the boston_public.info file
+Currently the style.css file is commented out in the bahstun_public.info file
 because we aren't loading any theme specific styles.
 
 Use SMACSS. Mimic what's happening in the base theme. You'll possibly only

@@ -1,7 +1,7 @@
-name = Boston Content Type Post
-description = Boston Post Content Type
+name = Bahstun Content Type Post
+description = Bahstun Post Content Type
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = advanced_text_formatter
 dependencies[] = background_image_formatter

@@ -1,7 +1,7 @@
-name = Boston Text Component
-description = Text component item for Boston.gov.
+name = Bahstun Text Component
+description = Text component item for Bahstun.gov.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 1.0
 dependencies[] = bos_shared_fields
 dependencies[] = bos_subcomponents_text

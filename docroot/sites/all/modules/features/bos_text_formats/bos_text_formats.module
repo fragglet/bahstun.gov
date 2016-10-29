@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Text Formats feature.
+ * Code for the Bahstun Text Formats feature.
  */
 
 include_once 'bos_text_formats.features.inc';

@@ -1,7 +1,7 @@
-name = Boston Component 311
+name = Bahstun Component 311
 description = 311 Component
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

@@ -12,7 +12,7 @@ function bos_view_calendar_listing_views_default_views() {
 
   $view = new view();
   $view->name = 'calendar';
-  $view->description = 'Calendar displays for Boston.gov.';
+  $view->description = 'Calendar displays for Bahstun.gov.';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Calendar';
@@ -485,7 +485,7 @@ function bos_view_calendar_listing_views_default_views() {
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'date_ical';
-  $handler->display->display_options['style_options']['cal_name'] = 'City of Boston Events';
+  $handler->display->display_options['style_options']['cal_name'] = 'City of Bahstun Events';
   $handler->display->display_options['style_options']['unescape_punctuation'] = TRUE;
   $handler->display->display_options['row_plugin'] = 'date_ical_fields';
   $handler->display->display_options['row_options']['date_field'] = 'field_event_dates';

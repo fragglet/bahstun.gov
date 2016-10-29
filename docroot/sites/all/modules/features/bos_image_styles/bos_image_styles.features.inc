@@ -106,9 +106,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_desktop_1x.
-  $styles['rep_wide_2000x700custom_boston_desktop_1x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_desktop_1x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_desktop_1x.
+  $styles['rep_wide_2000x700custom_bahstun_desktop_1x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_desktop_1x',
     'effects' => array(
       4 => array(
         'name' => 'image_scale_and_crop',
@@ -122,9 +122,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_desktop_2x.
-  $styles['rep_wide_2000x700custom_boston_desktop_2x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_desktop_2x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_desktop_2x.
+  $styles['rep_wide_2000x700custom_bahstun_desktop_2x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_desktop_2x',
     'effects' => array(
       3 => array(
         'name' => 'image_scale_and_crop',
@@ -138,9 +138,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_mobile_1x.
-  $styles['rep_wide_2000x700custom_boston_mobile_1x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_mobile_1x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_mobile_1x.
+  $styles['rep_wide_2000x700custom_bahstun_mobile_1x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_mobile_1x',
     'effects' => array(
       8 => array(
         'name' => 'image_scale_and_crop',
@@ -154,9 +154,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_mobile_2x.
-  $styles['rep_wide_2000x700custom_boston_mobile_2x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_mobile_2x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_mobile_2x.
+  $styles['rep_wide_2000x700custom_bahstun_mobile_2x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_mobile_2x',
     'effects' => array(
       7 => array(
         'name' => 'image_scale_and_crop',
@@ -170,9 +170,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_tablet_1x.
-  $styles['rep_wide_2000x700custom_boston_tablet_1x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_tablet_1x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_tablet_1x.
+  $styles['rep_wide_2000x700custom_bahstun_tablet_1x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_tablet_1x',
     'effects' => array(
       6 => array(
         'name' => 'image_scale_and_crop',
@@ -186,9 +186,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_tablet_2x.
-  $styles['rep_wide_2000x700custom_boston_tablet_2x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_tablet_2x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_tablet_2x.
+  $styles['rep_wide_2000x700custom_bahstun_tablet_2x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_tablet_2x',
     'effects' => array(
       5 => array(
         'name' => 'image_scale_and_crop',
@@ -202,9 +202,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rep_wide_2000x700custom_boston_wide_1x.
-  $styles['rep_wide_2000x700custom_boston_wide_1x'] = array(
-    'label' => 'rep_wide_2000x700custom_boston_wide_1x',
+  // Exported image style: rep_wide_2000x700custom_bahstun_wide_1x.
+  $styles['rep_wide_2000x700custom_bahstun_wide_1x'] = array(
+    'label' => 'rep_wide_2000x700custom_bahstun_wide_1x',
     'effects' => array(
       2 => array(
         'name' => 'image_scale_and_crop',
@@ -218,9 +218,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_desktop_1x.
-  $styles['resp_wide_2000x460custom_boston_desktop_1x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_desktop_1x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_desktop_1x.
+  $styles['resp_wide_2000x460custom_bahstun_desktop_1x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_desktop_1x',
     'effects' => array(
       4 => array(
         'name' => 'image_scale_and_crop',
@@ -234,9 +234,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_desktop_2x.
-  $styles['resp_wide_2000x460custom_boston_desktop_2x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_desktop_2x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_desktop_2x.
+  $styles['resp_wide_2000x460custom_bahstun_desktop_2x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_desktop_2x',
     'effects' => array(
       3 => array(
         'name' => 'image_scale_and_crop',
@@ -250,9 +250,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_mobile_1x.
-  $styles['resp_wide_2000x460custom_boston_mobile_1x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_mobile_1x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_mobile_1x.
+  $styles['resp_wide_2000x460custom_bahstun_mobile_1x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_mobile_1x',
     'effects' => array(
       8 => array(
         'name' => 'image_scale_and_crop',
@@ -266,9 +266,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_mobile_2x.
-  $styles['resp_wide_2000x460custom_boston_mobile_2x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_mobile_2x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_mobile_2x.
+  $styles['resp_wide_2000x460custom_bahstun_mobile_2x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_mobile_2x',
     'effects' => array(
       7 => array(
         'name' => 'image_scale_and_crop',
@@ -282,9 +282,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_tablet_1x.
-  $styles['resp_wide_2000x460custom_boston_tablet_1x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_tablet_1x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_tablet_1x.
+  $styles['resp_wide_2000x460custom_bahstun_tablet_1x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_tablet_1x',
     'effects' => array(
       6 => array(
         'name' => 'image_scale_and_crop',
@@ -298,9 +298,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_tablet_2x.
-  $styles['resp_wide_2000x460custom_boston_tablet_2x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_tablet_2x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_tablet_2x.
+  $styles['resp_wide_2000x460custom_bahstun_tablet_2x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_tablet_2x',
     'effects' => array(
       5 => array(
         'name' => 'image_scale_and_crop',
@@ -314,9 +314,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x460custom_boston_wide_1x.
-  $styles['resp_wide_2000x460custom_boston_wide_1x'] = array(
-    'label' => 'resp_wide_2000x460custom_boston_wide_1x',
+  // Exported image style: resp_wide_2000x460custom_bahstun_wide_1x.
+  $styles['resp_wide_2000x460custom_bahstun_wide_1x'] = array(
+    'label' => 'resp_wide_2000x460custom_bahstun_wide_1x',
     'effects' => array(
       2 => array(
         'name' => 'image_scale_and_crop',
@@ -330,9 +330,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_desktop_1x.
-  $styles['resp_wide_2000x800custom_boston_desktop_1x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_desktop_1x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_desktop_1x.
+  $styles['resp_wide_2000x800custom_bahstun_desktop_1x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_desktop_1x',
     'effects' => array(
       4 => array(
         'name' => 'image_scale_and_crop',
@@ -346,9 +346,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_desktop_2x.
-  $styles['resp_wide_2000x800custom_boston_desktop_2x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_desktop_2x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_desktop_2x.
+  $styles['resp_wide_2000x800custom_bahstun_desktop_2x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_desktop_2x',
     'effects' => array(
       3 => array(
         'name' => 'image_scale_and_crop',
@@ -362,9 +362,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_mobile_1x.
-  $styles['resp_wide_2000x800custom_boston_mobile_1x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_mobile_1x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_mobile_1x.
+  $styles['resp_wide_2000x800custom_bahstun_mobile_1x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_mobile_1x',
     'effects' => array(
       8 => array(
         'name' => 'image_scale_and_crop',
@@ -378,9 +378,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_mobile_2x.
-  $styles['resp_wide_2000x800custom_boston_mobile_2x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_mobile_2x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_mobile_2x.
+  $styles['resp_wide_2000x800custom_bahstun_mobile_2x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_mobile_2x',
     'effects' => array(
       9 => array(
         'name' => 'image_scale_and_crop',
@@ -394,9 +394,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_tablet_1x.
-  $styles['resp_wide_2000x800custom_boston_tablet_1x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_tablet_1x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_tablet_1x.
+  $styles['resp_wide_2000x800custom_bahstun_tablet_1x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_tablet_1x',
     'effects' => array(
       6 => array(
         'name' => 'image_scale_and_crop',
@@ -410,9 +410,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_tablet_2x.
-  $styles['resp_wide_2000x800custom_boston_tablet_2x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_tablet_2x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_tablet_2x.
+  $styles['resp_wide_2000x800custom_bahstun_tablet_2x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_tablet_2x',
     'effects' => array(
       5 => array(
         'name' => 'image_scale_and_crop',
@@ -426,9 +426,9 @@ function bos_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: resp_wide_2000x800custom_boston_wide_1x.
-  $styles['resp_wide_2000x800custom_boston_wide_1x'] = array(
-    'label' => 'resp_wide_2000x800custom_boston_wide_1x',
+  // Exported image style: resp_wide_2000x800custom_bahstun_wide_1x.
+  $styles['resp_wide_2000x800custom_bahstun_wide_1x'] = array(
+    'label' => 'resp_wide_2000x800custom_bahstun_wide_1x',
     'effects' => array(
       2 => array(
         'name' => 'image_scale_and_crop',

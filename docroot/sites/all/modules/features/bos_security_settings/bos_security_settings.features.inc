@@ -18,8 +18,8 @@ function bos_security_settings_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function bos_security_settings_password_policy_features_default_policy() {
   return array(
-    'Boston Authenticated Users' => array(
-      'name' => 'Boston Authenticated Users',
+    'Bahstun Authenticated Users' => array(
+      'name' => 'Bahstun Authenticated Users',
       'description' => '',
       'enabled' => 1,
       'policy' => array(

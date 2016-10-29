@@ -4,7 +4,7 @@
  * Contains FieldContext class.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Drupal\DrupalExtension\Context\RawDrupalContext;

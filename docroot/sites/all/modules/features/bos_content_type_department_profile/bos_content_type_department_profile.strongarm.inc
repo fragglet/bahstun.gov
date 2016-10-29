@@ -176,7 +176,7 @@ function bos_content_type_department_profile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_department_profile_pattern';
-  $strongarm->value = '[boston:contact-path]/[node:title]';
+  $strongarm->value = '[bahstun:contact-path]/[node:title]';
   $export['pathauto_node_department_profile_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

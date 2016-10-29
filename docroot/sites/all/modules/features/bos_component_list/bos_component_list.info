@@ -1,7 +1,7 @@
-name = Boston Component List
+name = Bahstun Component List
 description = Provides the list component.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

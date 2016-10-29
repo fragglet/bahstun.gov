@@ -4,7 +4,7 @@
  * Contains ContextsTrait trait.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Behat\Behat\Hook\Scope\BeforeScenarioScope;
 
@@ -12,7 +12,7 @@ use Behat\Behat\Hook\Scope\BeforeScenarioScope;
 /**
  * Trait ContextsTrait provides methods for retrieving Behat contexts.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 trait ContextsTrait {
 
@@ -72,16 +72,16 @@ trait ContextsTrait {
   /**
    * Return the loaded ComponentContext.
    *
-   * @return \Boston\Contexts\ComponentContext
+   * @return \Bahstun\Contexts\ComponentContext
    *   The loaded ComponentContext.
    */
   protected function getComponentContext() {
     if (!empty($this->environment)) {
-      return $this->environment->getContext('Boston\Contexts\ComponentContext');
+      return $this->environment->getContext('Bahstun\Contexts\ComponentContext');
     }
     else {
       foreach ($this->contexts as $c) {
-        if ($c instanceof \Boston\Contexts\ComponentContext) {
+        if ($c instanceof \Bahstun\Contexts\ComponentContext) {
           return $c;
         }
       }
@@ -92,16 +92,16 @@ trait ContextsTrait {
   /**
    * Return the loaded FeatureContext.
    *
-   * @return \Boston\Contexts\FeatureContext
+   * @return \Bahstun\Contexts\FeatureContext
    *   The loaded FeatureContext.
    */
   protected function getFeatureContext() {
     if (!empty($this->environment)) {
-      return $this->environment->getContext('Boston\Contexts\FeatureContext');
+      return $this->environment->getContext('Bahstun\Contexts\FeatureContext');
     }
     else {
       foreach ($this->contexts as $c) {
-        if ($c instanceof \Boston\Contexts\FeatureContext) {
+        if ($c instanceof \Bahstun\Contexts\FeatureContext) {
           return $c;
         }
       }
@@ -112,16 +112,16 @@ trait ContextsTrait {
   /**
    * Return the loaded RoleContext.
    *
-   * @return \Boston\Contexts\RoleContext
+   * @return \Bahstun\Contexts\RoleContext
    *   The loaded RoleContext.
    */
   protected function getRoleContext() {
     if (!empty($this->environment)) {
-      return $this->environment->getContext('Boston\Contexts\RoleContext');
+      return $this->environment->getContext('Bahstun\Contexts\RoleContext');
     }
     else {
       foreach ($this->contexts as $c) {
-        if ($c instanceof \Boston\Contexts\RoleContext) {
+        if ($c instanceof \Bahstun\Contexts\RoleContext) {
           return $c;
         }
       }
@@ -132,16 +132,16 @@ trait ContextsTrait {
   /**
    * Return the loaded WorkflowContext.
    *
-   * @return \Boston\Contexts\WorkflowContext
+   * @return \Bahstun\Contexts\WorkflowContext
    *   The loaded WorkflowContext.
    */
   protected function getWorkflowContext() {
     if (!empty($this->environment)) {
-      return $this->environment->getContext('Boston\Contexts\WorkflowContext');
+      return $this->environment->getContext('Bahstun\Contexts\WorkflowContext');
     }
     else {
       foreach ($this->contexts as $c) {
-        if ($c instanceof \Boston\Contexts\WorkflowContext) {
+        if ($c instanceof \Bahstun\Contexts\WorkflowContext) {
           return $c;
         }
       }
@@ -152,16 +152,16 @@ trait ContextsTrait {
   /**
    * Return the loaded FieldContext.
    *
-   * @return \Boston\Contexts\FieldContext
+   * @return \Bahstun\Contexts\FieldContext
    *   The loaded FieldContext.
    */
   protected function getFieldContext() {
     if (!empty($this->environment)) {
-      return $this->environment->getContext('Boston\Contexts\FieldContext');
+      return $this->environment->getContext('Bahstun\Contexts\FieldContext');
     }
     else {
       foreach ($this->contexts as $c) {
-        if ($c instanceof \Boston\Contexts\FieldContext) {
+        if ($c instanceof \Bahstun\Contexts\FieldContext) {
           return $c;
         }
       }

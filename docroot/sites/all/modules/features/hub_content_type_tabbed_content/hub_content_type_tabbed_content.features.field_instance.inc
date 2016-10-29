@@ -312,7 +312,7 @@ function hub_content_type_tabbed_content_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'boston_short',
+          'format_type' => 'bahstun_short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',

@@ -1,7 +1,7 @@
-name = Boston Component 3 Column with image
+name = Bahstun Component 3 Column with image
 description = Component with Three Column and Image
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = entityreference

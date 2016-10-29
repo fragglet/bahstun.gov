@@ -1,6 +1,6 @@
 @api @content
 Feature: Content Types
-  Given that I am a City of Boston site builder
+  Given that I am a City of Bahstun site builder
   Then I want content types available which enable me to build a site
 
   Scenario Outline: Verify content types exist

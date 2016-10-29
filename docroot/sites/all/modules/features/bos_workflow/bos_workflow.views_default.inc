@@ -11,11 +11,11 @@ function bos_workflow_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'boston_current_user';
+  $view->name = 'bahstun_current_user';
   $view->description = 'Information about the current user.';
   $view->tag = 'Workbench';
   $view->base_table = 'users';
-  $view->human_name = 'Boston: Current user';
+  $view->human_name = 'Bahstun: Current user';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -72,21 +72,21 @@ function bos_workflow_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $export['boston_current_user'] = $view;
+  $export['bahstun_current_user'] = $view;
 
   $view = new view();
-  $view->name = 'boston_departments';
+  $view->name = 'bahstun_departments';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Boston: Departments';
+  $view->human_name = 'Bahstun: Departments';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston: Departments';
+  $handler->display->display_options['title'] = 'Bahstun: Departments';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -169,8 +169,8 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Last updated';
-  $handler->display->display_options['fields']['changed']['date_format'] = 'boston_short';
-  $handler->display->display_options['fields']['changed']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'bahstun_short';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -242,14 +242,14 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '5';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['boston_departments'] = $view;
+  $export['bahstun_departments'] = $view;
 
   $view = new view();
-  $view->name = 'boston_edits_by_user';
+  $view->name = 'bahstun_edits_by_user';
   $view->description = 'Lists content edited by the user.';
   $view->tag = 'Workbench';
   $view->base_table = 'node_revision';
-  $view->human_name = 'Boston: Edits by user';
+  $view->human_name = 'Bahstun: Edits by user';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -395,8 +395,8 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['label'] = 'Last updated';
-  $handler->display->display_options['fields']['timestamp']['date_format'] = 'boston_short';
-  $handler->display->display_options['fields']['timestamp']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['timestamp']['date_format'] = 'bahstun_short';
+  $handler->display->display_options['fields']['timestamp']['second_date_format'] = 'bahstun_featured';
   /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
@@ -535,21 +535,21 @@ function bos_workflow_views_default_views() {
     36 => 0,
     41 => 0,
   );
-  $export['boston_edits_by_user'] = $view;
+  $export['bahstun_edits_by_user'] = $view;
 
   $view = new view();
-  $view->name = 'boston_events';
+  $view->name = 'bahstun_events';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Boston: Events ';
+  $view->human_name = 'Bahstun: Events ';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston: Events ';
+  $handler->display->display_options['title'] = 'Bahstun: Events ';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -662,7 +662,7 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['field_updated_date']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_updated_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_updated_date']['settings'] = array(
-    'format_type' => 'boston_short',
+    'format_type' => 'bahstun_short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -871,14 +871,14 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '3';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['boston_events'] = $view;
+  $export['bahstun_events'] = $view;
 
   $view = new view();
-  $view->name = 'boston_moderation_content';
+  $view->name = 'bahstun_moderation_content';
   $view->description = 'Lists content by moderation state.';
   $view->tag = 'Workbench Moderation';
   $view->base_table = 'node_revision';
-  $view->human_name = 'Boston Moderation: Content';
+  $view->human_name = 'Bahstun Moderation: Content';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -1239,21 +1239,21 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'My drafts';
   $handler->display->display_options['menu']['weight'] = '98';
-  $export['boston_moderation_content'] = $view;
+  $export['bahstun_moderation_content'] = $view;
 
   $view = new view();
-  $view->name = 'boston_posts';
+  $view->name = 'bahstun_posts';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Boston: Posts';
+  $view->human_name = 'Bahstun: Posts';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston: Posts';
+  $handler->display->display_options['title'] = 'Bahstun: Posts';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -1332,7 +1332,7 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['field_published_date']['table'] = 'field_data_field_published_date';
   $handler->display->display_options['fields']['field_published_date']['field'] = 'field_published_date';
   $handler->display->display_options['fields']['field_published_date']['settings'] = array(
-    'format_type' => 'boston_short',
+    'format_type' => 'bahstun_short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -1350,7 +1350,7 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['field_updated_date']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_updated_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_updated_date']['settings'] = array(
-    'format_type' => 'boston_short',
+    'format_type' => 'bahstun_short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -1539,14 +1539,14 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '4';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['boston_posts'] = $view;
+  $export['bahstun_posts'] = $view;
 
   $view = new view();
-  $view->name = 'boston_recent_content';
+  $view->name = 'bahstun_recent_content';
   $view->description = 'Content overview page for Workbench.';
   $view->tag = 'Workbench';
   $view->base_table = 'node';
-  $view->human_name = 'Boston: Recent content';
+  $view->human_name = 'Bahstun: Recent content';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -1676,8 +1676,8 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['changed']['label'] = 'Last updated';
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['changed']['date_format'] = 'boston_short';
-  $handler->display->display_options['fields']['changed']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'bahstun_short';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1823,8 +1823,8 @@ function bos_workflow_views_default_views() {
   $handler->display->display_options['fields']['changed']['label'] = 'Last updated';
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['changed']['date_format'] = 'boston_short';
-  $handler->display->display_options['fields']['changed']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'bahstun_short';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -1872,7 +1872,7 @@ function bos_workflow_views_default_views() {
     36 => 0,
     41 => 0,
   );
-  $export['boston_recent_content'] = $view;
+  $export['bahstun_recent_content'] = $view;
 
   return $export;
 }

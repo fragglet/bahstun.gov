@@ -167,7 +167,7 @@ function bos_content_type_how_to_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_how_to_pattern';
-  $strongarm->value = '[boston:contact-path]/[node:title]';
+  $strongarm->value = '[bahstun:contact-path]/[node:title]';
   $export['pathauto_node_how_to_pattern'] = $strongarm;
 
   return $export;

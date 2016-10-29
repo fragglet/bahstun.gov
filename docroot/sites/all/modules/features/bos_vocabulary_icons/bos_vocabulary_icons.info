@@ -1,7 +1,7 @@
-name = Boston Vocabulary Icons
+name = Bahstun Vocabulary Icons
 description = Taxonomy for classifying icons.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm

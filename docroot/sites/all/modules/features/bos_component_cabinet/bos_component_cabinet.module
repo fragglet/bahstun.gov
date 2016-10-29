@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component Cabinet feature.
+ * Code for the Bahstun Component Cabinet feature.
  */
 
 include_once 'bos_component_cabinet.features.inc';

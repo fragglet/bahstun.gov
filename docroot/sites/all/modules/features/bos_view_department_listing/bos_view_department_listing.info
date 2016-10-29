@@ -1,7 +1,7 @@
-name = Boston View Department Listing
-description = Boston View Department Listing
+name = Bahstun View Department Listing
+description = Bahstun View Department Listing
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = entity
 dependencies[] = views
 features[ctools][] = views:views_default:3.0

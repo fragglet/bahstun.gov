@@ -196,7 +196,7 @@ function hub_profile_update_7006() {
   $script_page_info = (object) array('type'=>'script_page');
   apachesolr_node_type_insert($script_page_info);
   cache_clear_all();
-  variable_set('hub_profile_change_password_url', 'https://oimprd.cityofboston.gov/admin/faces/pages/forgotpwd.jspx?backUrl=https%3A%2F%2Foamprd.cityofboston.gov%2Fssologin%2Flogin.jsp&_afrWindowMode=0&_afrLoop=1310480525291885&_adf.ctrl-state=12cbxb91wb_4');
+  variable_set('hub_profile_change_password_url', 'https://oimprd.cityofbahstun.gov/admin/faces/pages/forgotpwd.jspx?backUrl=https%3A%2F%2Foamprd.cityofbahstun.gov%2Fssologin%2Flogin.jsp&_afrWindowMode=0&_afrLoop=1310480525291885&_adf.ctrl-state=12cbxb91wb_4');
 }
 
 /**

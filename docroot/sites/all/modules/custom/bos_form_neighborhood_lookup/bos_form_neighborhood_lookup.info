@@ -1,7 +1,7 @@
-name = Boston Neighborhood Lookup Form
+name = Bahstun Neighborhood Lookup Form
 core = 7.x
-package = Boston Custom
-description = Defines Neighborhood Lookup Form for the Boston.gov pilot site.
+package = Bahstun Custom
+description = Defines Neighborhood Lookup Form for the Bahstun.gov pilot site.
 
 ; Add the JS functionality for the form to be loaded globally since we cannot
 ; call it from a shortcode hook. The benefits of aggregation here outweigh

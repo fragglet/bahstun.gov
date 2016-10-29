@@ -1,7 +1,7 @@
-name = Boston File Type Document
+name = Bahstun File Type Document
 description = Controls the document file type.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = date

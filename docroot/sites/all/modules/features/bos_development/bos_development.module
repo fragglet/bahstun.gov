@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Development feature.
+ * Code for the Bahstun Development feature.
  */
 
 include_once 'bos_development.features.inc';

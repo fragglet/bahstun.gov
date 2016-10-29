@@ -116,7 +116,7 @@ function bos_component_iframe_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'This determines the height of the iframe. Auto will resize automatically. To get auto setup correctly, contact digital@boston.gov.',
+    'description' => 'This determines the height of the iframe. Auto will resize automatically. To get auto setup correctly, contact digital@bahstun.gov.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -156,7 +156,7 @@ function bos_component_iframe_field_default_field_instances() {
     'bundle' => 'iframe',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'A valid URL for the iframe, such as "http://boston.gov/recent-trash-stories".',
+    'description' => 'A valid URL for the iframe, such as "http://bahstun.gov/recent-trash-stories".',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -200,12 +200,12 @@ function bos_component_iframe_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A valid URL for the iframe, such as "http://boston.gov/recent-trash-stories".');
+  t('A valid URL for the iframe, such as "http://bahstun.gov/recent-trash-stories".');
   t('An optional contact for this iframe.');
   t('An optional title for this iframe.');
   t('Contact');
   t('Source URL');
-  t('This determines the height of the iframe. Auto will resize automatically. To get auto setup correctly, contact digital@boston.gov.');
+  t('This determines the height of the iframe. Auto will resize automatically. To get auto setup correctly, contact digital@bahstun.gov.');
   t('Title');
   t('iFrame Size');
 

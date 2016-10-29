@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component Feedback feature.
+ * Code for the Bahstun Component Feedback feature.
  */
 
 include_once 'bos_component_feedback.features.inc';

@@ -1,7 +1,7 @@
-name = Boston Component Cabinet
-description = Boston Component Cabinet
+name = Bahstun Component Cabinet
+description = Bahstun Component Cabinet
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

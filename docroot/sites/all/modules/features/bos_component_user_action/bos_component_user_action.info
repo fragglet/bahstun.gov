@@ -1,7 +1,7 @@
-name = Boston Component User Action
+name = Bahstun Component User Action
 description = A component to give users a list of tasks that they can easily access.
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.2
 dependencies[] = background_image_formatter
 dependencies[] = bos_shared_fields

@@ -1,7 +1,7 @@
-name = Boston Component Featured Item
+name = Bahstun Component Featured Item
 description = Provides the feature item component.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

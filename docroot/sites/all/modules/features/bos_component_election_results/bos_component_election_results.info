@@ -1,4 +1,4 @@
-name = Boston Election Results
+name = Bahstun Election Results
 core = 7.x
 package = Features
 dependencies[] = bos_component_iframe

@@ -1,7 +1,7 @@
-name = Boston How-to Content Type
+name = Bahstun How-to Content Type
 description = Controls the How-to content type.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = addressfield
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
@@ -73,4 +73,4 @@ features[variable][] = node_options_how_to
 features[variable][] = node_preview_how_to
 features[variable][] = node_submitted_how_to
 features[variable][] = pathauto_node_how_to_pattern
-packages = Boston
+packages = Bahstun

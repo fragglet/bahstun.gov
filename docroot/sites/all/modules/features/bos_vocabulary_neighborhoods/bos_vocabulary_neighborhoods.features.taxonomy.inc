@@ -12,7 +12,7 @@ function bos_vocabulary_neighborhoods_taxonomy_default_vocabularies() {
     'neighborhoods' => array(
       'name' => 'Neighborhoods',
       'machine_name' => 'neighborhoods',
-      'description' => 'Boston area neighborhoods',
+      'description' => 'Bahstun area neighborhoods',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

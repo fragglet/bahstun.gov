@@ -26,7 +26,7 @@
       var success = license_plate_validate(plate);
       if (success) {
         window.open(
-          'http://www.cityofboston.gov/towing/search/?plate=' + plate,
+          'http://www.cityofbahstun.gov/towing/search/?plate=' + plate,
           '_blank'
         );
         $("#edit-license-plate").removeClass('error');

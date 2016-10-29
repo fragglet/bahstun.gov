@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * API documentation for Boston Component List module.
+ * API documentation for Bahstun Component List module.
  */
 
 /**

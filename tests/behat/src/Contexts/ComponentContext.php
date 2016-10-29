@@ -4,7 +4,7 @@
  * Contains ComponentContext class.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Behat\Hook\Scope\BeforeScenarioScope;
@@ -13,7 +13,7 @@ use Drupal\DrupalExtension\Context\RawDrupalContext;
 /**
  * Class ComponentContext adds component-specific step definitions.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 class ComponentContext extends RawDrupalContext implements SnippetAcceptingContext {
 

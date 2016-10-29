@@ -15,9 +15,9 @@ function bos_settings_chosen_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'chosen_disabled_themes';
   $strongarm->value = array(
-    'boston' => 0,
-    'boston_admin' => 0,
-    'boston_public' => 0,
+    'bahstun' => 0,
+    'bahstun_admin' => 0,
+    'bahstun_public' => 0,
     'seven' => 0,
   );
   $export['chosen_disabled_themes'] = $strongarm;

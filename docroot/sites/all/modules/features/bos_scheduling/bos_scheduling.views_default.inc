@@ -11,18 +11,18 @@ function bos_scheduling_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'boston_scheduling';
+  $view->name = 'bahstun_scheduling';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node_revision';
-  $view->human_name = 'Boston Scheduling';
+  $view->human_name = 'Bahstun Scheduling';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston Scheduling';
+  $handler->display->display_options['title'] = 'Bahstun Scheduling';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -70,7 +70,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Publish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -160,7 +160,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Unpublish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -211,21 +211,21 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['tab_options']['type'] = 'tab';
   $handler->display->display_options['tab_options']['title'] = 'Scheduled Content';
   $handler->display->display_options['tab_options']['weight'] = '0';
-  $export['boston_scheduling'] = $view;
+  $export['bahstun_scheduling'] = $view;
 
   $view = new view();
-  $view->name = 'boston_scheduling_event';
+  $view->name = 'bahstun_scheduling_event';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node_revision';
-  $view->human_name = 'Boston Scheduling: Event';
+  $view->human_name = 'Bahstun Scheduling: Event';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston Scheduling: Event';
+  $handler->display->display_options['title'] = 'Bahstun Scheduling: Event';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -274,7 +274,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Publish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -353,7 +353,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Unpublish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -396,21 +396,21 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['tab_options']['type'] = 'tab';
   $handler->display->display_options['tab_options']['title'] = 'Scheduled Content';
   $handler->display->display_options['tab_options']['weight'] = '0';
-  $export['boston_scheduling_event'] = $view;
+  $export['bahstun_scheduling_event'] = $view;
 
   $view = new view();
-  $view->name = 'boston_scheduling_post';
+  $view->name = 'bahstun_scheduling_post';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node_revision';
-  $view->human_name = 'Boston Scheduling: Post';
+  $view->human_name = 'Bahstun Scheduling: Post';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Boston Scheduling: Post';
+  $handler->display->display_options['title'] = 'Bahstun Scheduling: Post';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access workbench';
@@ -458,7 +458,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Publish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -540,7 +540,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['fields']['date']['field'] = 'date';
   $handler->display->display_options['fields']['date']['label'] = 'Scheduled Unpublish Time';
   $handler->display->display_options['fields']['date']['date_format'] = 'short';
-  $handler->display->display_options['fields']['date']['second_date_format'] = 'boston_featured';
+  $handler->display->display_options['fields']['date']['second_date_format'] = 'bahstun_featured';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -583,7 +583,7 @@ function bos_scheduling_views_default_views() {
   $handler->display->display_options['tab_options']['type'] = 'tab';
   $handler->display->display_options['tab_options']['title'] = 'Scheduled Content';
   $handler->display->display_options['tab_options']['weight'] = '0';
-  $export['boston_scheduling_post'] = $view;
+  $export['bahstun_scheduling_post'] = $view;
 
   return $export;
 }

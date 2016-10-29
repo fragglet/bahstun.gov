@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Component Hero Image feature.
+ * Code for the Bahstun Component Hero Image feature.
  */
 
 include_once 'bos_component_hero_image.features.inc';

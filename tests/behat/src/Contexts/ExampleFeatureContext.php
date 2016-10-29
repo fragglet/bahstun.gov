@@ -5,7 +5,7 @@
  * Custom Behat Step definitions.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Drupal\DrupalExtension\Event\EntityEvent;

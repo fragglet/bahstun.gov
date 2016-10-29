@@ -21,7 +21,7 @@
       var success = validate_address(address);
       if (success) {
         window.open(
-          'https://www.cityofboston.gov/myneighborhood/?q=' + address,
+          'https://www.cityofbahstun.gov/myneighborhood/?q=' + address,
           '_blank'
         );
         $("#edit-street-address").removeClass('error');

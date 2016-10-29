@@ -3,14 +3,14 @@
  * @file
  * Set styles for the site.
  *
- * Create a boston styles set and add site-specific styles to it.
+ * Create a bahstun styles set and add site-specific styles to it.
  */
 (function ($, Drupal, window, document) {
   Drupal.behaviors.configureCkeditor = {
     attach: function (context, settings) {
       if (typeof(CKEDITOR) !== 'undefined') {
-        if (CKEDITOR.stylesSet.get('boston') == null) {
-          CKEDITOR.stylesSet.add('boston', [
+        if (CKEDITOR.stylesSet.get('bahstun') == null) {
+          CKEDITOR.stylesSet.add('bahstun', [
             // Block styles.
             {
               name: 'Intro Text',
@@ -29,7 +29,7 @@
             }
           ]);
 
-          CKEDITOR.config.stylesSet = 'boston';
+          CKEDITOR.config.stylesSet = 'bahstun';
         }
         CKEDITOR.config.scayt_autoStartup = true;
       }

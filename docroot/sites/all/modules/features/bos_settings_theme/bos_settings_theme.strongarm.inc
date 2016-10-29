@@ -13,7 +13,7 @@ function bos_settings_theme_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_boston_admin_settings';
+  $strongarm->name = 'theme_bahstun_admin_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
     'toggle_name' => 1,
@@ -42,12 +42,12 @@ function bos_settings_theme_strongarm() {
     'adminimal_theme_skin' => 'default',
     'jquery_update_jquery_version' => 'default',
   );
-  $export['theme_boston_admin_settings'] = $strongarm;
+  $export['theme_bahstun_admin_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_boston_public_settings';
+  $strongarm->name = 'theme_bahstun_public_settings';
   $strongarm->value = array(
     'toggle_name' => 1,
     'toggle_favicon' => 1,
@@ -55,25 +55,25 @@ function bos_settings_theme_strongarm() {
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
-    'boston_breadcrumb' => 'yes',
-    'boston_breadcrumb_separator' => ' › ',
-    'boston_breadcrumb_home' => 1,
-    'boston_breadcrumb_trailing' => 0,
-    'boston_breadcrumb_title' => 0,
-    'boston_skip_link_anchor' => 'main-menu',
-    'boston_skip_link_text' => 'Jump to navigation',
-    'boston_meta' => array(
+    'bahstun_breadcrumb' => 'yes',
+    'bahstun_breadcrumb_separator' => ' › ',
+    'bahstun_breadcrumb_home' => 1,
+    'bahstun_breadcrumb_trailing' => 0,
+    'bahstun_breadcrumb_title' => 0,
+    'bahstun_skip_link_anchor' => 'main-menu',
+    'bahstun_skip_link_text' => 'Jump to navigation',
+    'bahstun_meta' => array(
       'html5' => 'html5',
       'meta' => 'meta',
     ),
     'jquery_update_jquery_version' => '',
   );
-  $export['theme_boston_public_settings'] = $strongarm;
+  $export['theme_bahstun_public_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'theme_boston_settings';
+  $strongarm->name = 'theme_bahstun_settings';
   $strongarm->value = array(
     'toggle_name' => 1,
     'toggle_favicon' => 1,
@@ -81,21 +81,21 @@ function bos_settings_theme_strongarm() {
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
-    'boston_breadcrumb' => 'yes',
-    'boston_breadcrumb_separator' => ' › ',
-    'boston_breadcrumb_home' => 1,
-    'boston_breadcrumb_trailing' => 0,
-    'boston_breadcrumb_title' => 0,
-    'boston_layout' => NULL,
-    'boston_skip_link_anchor' => 'main-menu',
-    'boston_skip_link_text' => 'Jump to navigation',
-    'boston_meta' => array(
+    'bahstun_breadcrumb' => 'yes',
+    'bahstun_breadcrumb_separator' => ' › ',
+    'bahstun_breadcrumb_home' => 1,
+    'bahstun_breadcrumb_trailing' => 0,
+    'bahstun_breadcrumb_title' => 0,
+    'bahstun_layout' => NULL,
+    'bahstun_skip_link_anchor' => 'main-menu',
+    'bahstun_skip_link_text' => 'Jump to navigation',
+    'bahstun_meta' => array(
       'html5' => 'html5',
       'meta' => 'meta',
     ),
     'jquery_update_jquery_version' => '',
   );
-  $export['theme_boston_settings'] = $strongarm;
+  $export['theme_bahstun_settings'] = $strongarm;
 
   return $export;
 }

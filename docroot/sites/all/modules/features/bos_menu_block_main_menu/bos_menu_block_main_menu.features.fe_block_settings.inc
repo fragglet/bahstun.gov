@@ -21,22 +21,22 @@ function bos_menu_block_main_menu_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'boston' => array(
+      'bahstun' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'boston',
+        'theme' => 'bahstun',
         'weight' => 0,
       ),
-      'boston_admin' => array(
+      'bahstun_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'boston_admin',
+        'theme' => 'bahstun_admin',
         'weight' => 0,
       ),
-      'boston_hub' => array(
+      'bahstun_hub' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'boston_hub',
+        'theme' => 'bahstun_hub',
         'weight' => 0,
       ),
       'seven' => array(

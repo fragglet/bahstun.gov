@@ -1,7 +1,7 @@
-name = Boston Development
-description = Enable for aiding in development of the Boston website
+name = Bahstun Development
+description = Enable for aiding in development of the Bahstun website
 core = 7.x
-package = Boston Development
+package = Bahstun Development
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = masquerade

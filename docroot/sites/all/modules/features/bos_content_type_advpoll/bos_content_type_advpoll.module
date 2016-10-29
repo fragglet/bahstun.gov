@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Advanced Poll Content Type feature.
+ * Code for the Bahstun Advanced Poll Content Type feature.
  */
 
 include_once 'bos_content_type_advpoll.features.inc';

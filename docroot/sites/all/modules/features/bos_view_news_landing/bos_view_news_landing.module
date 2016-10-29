@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston View News Landing feature.
+ * Code for the Bahstun View News Landing feature.
  */
 
 include_once 'bos_view_news_landing.features.inc';

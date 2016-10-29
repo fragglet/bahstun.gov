@@ -1,7 +1,7 @@
-name = Boston News & Announcements Component
+name = Bahstun News & Announcements Component
 description = Component feature for News & Announcements
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

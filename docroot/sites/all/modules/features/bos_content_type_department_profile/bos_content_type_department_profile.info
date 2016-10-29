@@ -1,7 +1,7 @@
-name = Boston Department Profile Content Type
+name = Bahstun Department Profile Content Type
 description = Content settings for Department Profile
 core = 7.x
-package = Boston
+package = Bahstun
 version = 7.x-1.0
 dependencies[] = addressfield
 dependencies[] = bos_shared_fields

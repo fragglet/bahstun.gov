@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Scheduling feature.
+ * Code for the Bahstun Scheduling feature.
  */
 
 include_once 'bos_scheduling.features.inc';
@@ -16,7 +16,7 @@ function bos_scheduling_views_default_views_alter(&$views) {
   // site, and must also not include content types that are being handled in
   // other views.
   $type_filter_exception_by_view = array(
-    'boston_scheduling' => array(
+    'bahstun_scheduling' => array(
       'displays' => array(
         'default',
         'page_1',

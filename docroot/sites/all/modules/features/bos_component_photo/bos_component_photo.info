@@ -1,7 +1,7 @@
-name = Boston Component Photo
+name = Bahstun Component Photo
 description = Photo Component
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = entityreference

@@ -1,7 +1,7 @@
-name = Boston Settings Breadcrumbs
-description = Boston Settings Breadcrumbs
+name = Bahstun Settings Breadcrumbs
+description = Bahstun Settings Breadcrumbs
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = crumbs
 dependencies[] = ctools
 dependencies[] = fe_block

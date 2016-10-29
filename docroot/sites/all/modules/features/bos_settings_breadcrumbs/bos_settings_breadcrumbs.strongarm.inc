@@ -29,12 +29,12 @@ function bos_settings_breadcrumbs_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'crumbs_original_theme_breadcrumb';
   $strongarm->value = array(
-    'boston' => 'boston_breadcrumb',
+    'bahstun' => 'bahstun_breadcrumb',
     'adminimal' => 'theme_breadcrumb',
     'seven' => 'theme_breadcrumb',
-    'boston_admin' => 'theme_breadcrumb',
-    'boston_hub' => 'boston_breadcrumb',
-    'boston_public' => 'boston_breadcrumb',
+    'bahstun_admin' => 'theme_breadcrumb',
+    'bahstun_hub' => 'bahstun_breadcrumb',
+    'bahstun_public' => 'bahstun_breadcrumb',
   );
   $export['crumbs_original_theme_breadcrumb'] = $strongarm;
 
@@ -44,7 +44,7 @@ function bos_settings_breadcrumbs_strongarm() {
   $strongarm->name = 'crumbs_override_theme_breadcrumb';
   $strongarm->value = array(
     'theme_breadcrumb' => 'theme_breadcrumb',
-    'boston_breadcrumb' => 'boston_breadcrumb',
+    'bahstun_breadcrumb' => 'bahstun_breadcrumb',
   );
   $export['crumbs_override_theme_breadcrumb'] = $strongarm;
 

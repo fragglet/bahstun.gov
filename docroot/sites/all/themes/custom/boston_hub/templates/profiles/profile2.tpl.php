@@ -43,7 +43,7 @@
       <div class="user-profile-header-block">
         <div class="container">
 
-          <h1>My Profile <label><a href="https://ess.boston.gov" title="Edit profile">Edit profile</a></label></h1>
+          <h1>My Profile <label><a href="https://ess.bahstun.gov" title="Edit profile">Edit profile</a></label></h1>
           <?php if (!empty($header_data)) : ?>
             <div class="profile-header-links">
               <div class="user-profile-header-payroll supporting-text">
@@ -173,9 +173,9 @@
         <div class="container">
           <div class="user-help-wrapper">
             <div class="question-help">​​To update your work contact or organizational information, contact:</div>
-            <div class="question-help title-text ">Boston Public School Employees</div>
+            <div class="question-help title-text ">Bahstun Public School Employees</div>
             <div class="question-help">Office of Human Capital at ​<a href="tel:617-635-9600" class="inverted"><span class="a11y-hidden">Call </span>617-635-9600</a></div>
-            <div class="question-help"><a href="https://hcm.cityhall.boston.cob/psp/pshrpd3/EMPLOYEE/HRMS/c/ROLE_EMPLOYEE.JPM_PERS_PTSEL_EMP.GBL?PORTALPARAM_PTCNAV=COB_CREF_MY_CURRENT_PRO_UPGRAD&EOPP.SCNode=EMPL&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=COB_ONEB_MY_LEARNING_N_DEV&EOPP.SCLabel=The%20Hub%20Career%20Development&EOPP.SCPTcname=&FolderPath=PORTAL_ROOT_OBJECT.PORTAL_BASE_DATA.CO_NAVIGATION_COLLECTIONS.COB_ONEB_MY_LEARNING_N_DEV.COB_F200707311707005312967314.COB_F200710101209269027375102.COB_CREF_MY_CURRENT_PRO_UPGRAD&IsFolder=false" class="inverted">View BPS licensure and BTU program area information and view or update your accomplishments, skills, and abilities.</a></div>
+            <div class="question-help"><a href="https://hcm.cityhall.bahstun.cob/psp/pshrpd3/EMPLOYEE/HRMS/c/ROLE_EMPLOYEE.JPM_PERS_PTSEL_EMP.GBL?PORTALPARAM_PTCNAV=COB_CREF_MY_CURRENT_PRO_UPGRAD&EOPP.SCNode=EMPL&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=COB_ONEB_MY_LEARNING_N_DEV&EOPP.SCLabel=The%20Hub%20Career%20Development&EOPP.SCPTcname=&FolderPath=PORTAL_ROOT_OBJECT.PORTAL_BASE_DATA.CO_NAVIGATION_COLLECTIONS.COB_ONEB_MY_LEARNING_N_DEV.COB_F200707311707005312967314.COB_F200710101209269027375102.COB_CREF_MY_CURRENT_PRO_UPGRAD&IsFolder=false" class="inverted">View BPS licensure and BTU program area information and view or update your accomplishments, skills, and abilities.</a></div>
             <div class="question-help title-text">All Other Employees</div>
             <div class="question-help">Your departmental personnel officer.</div>
           </div>
@@ -187,7 +187,7 @@
         <?php if (!empty($content['field_user_picture'])) : ?>
           <?php print render($content['field_user_picture']); ?>
         <?php else :?>
-          <img src="/<?php print drupal_get_path('theme', 'boston_hub'); ?>/dist/img/default-avatar-lg.svg" alt="missing profile picture">
+          <img src="/<?php print drupal_get_path('theme', 'bahstun_hub'); ?>/dist/img/default-avatar-lg.svg" alt="missing profile picture">
         <?php endif ?>
       </div>
     <?php endif; ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Install file for updates that should affect both boston and the hub sites.
+ * Install file for updates that should affect both bahstun and the hub sites.
  */
 
 /**
@@ -132,15 +132,15 @@ function bos_core_update_7005() {
       'machine_name' => '404-page-text',
       'name' => '404 Page Text',
       'description' => 'The text to display on the 404 page.',
-      'type' => 'boston',
-      'content' => '<p>Looks like this page went overboard. We&#39;ll check the harbor, but perhaps one of these options is more your cup of tea: <a href="http://www.cityofboston.gov/311/">Request City services</a>, <a href="http://www.cityofboston.gov/assessing/paysearch.asp">View property tax</a>, <a href="http://www.cityofboston.gov/parking/payment.asp">Pay a parking ticket</a>, or <a href="http://www.cityofboston.gov/ohr/careercenter/">Apply for a job</a>.</p>',
+      'type' => 'bahstun',
+      'content' => '<p>Looks like this page went overboard. We&#39;ll check the harbor, but perhaps one of these options is more your cup of tea: <a href="http://www.cityofbahstun.gov/311/">Request City services</a>, <a href="http://www.cityofbahstun.gov/assessing/paysearch.asp">View property tax</a>, <a href="http://www.cityofbahstun.gov/parking/payment.asp">Pay a parking ticket</a>, or <a href="http://www.cityofbahstun.gov/ohr/careercenter/">Apply for a job</a>.</p>',
       'format' => 'filtered_html',
     ),
     '403' => array(
       'machine_name' => '403-page-text',
       'name' => '403 Page Text',
       'description' => 'The text to display on the 403 page.',
-      'type' => 'boston',
+      'type' => 'bahstun',
       'content' => '<p><em>Go run tell that...at midnight.</em></p>',
       'format' => 'filtered_html',
     ),
@@ -340,9 +340,9 @@ function bos_core_update_7017() {
     'social_image_default' => array(
       'machine_name' => 'social-image-default',
       'name' => 'Social Image Default',
-      'description' => 'A default image for Boston.gov social tagging',
-      'type' => 'boston',
-      'content' => 'https://www.boston.gov/sites/all/themes/custom/boston/src/img/b-logo-large.png',
+      'description' => 'A default image for Bahstun.gov social tagging',
+      'type' => 'bahstun',
+      'content' => 'https://www.bahstun.gov/sites/all/themes/custom/bahstun/src/img/b-logo-large.png',
       'format' => 'plain_text',
     ),
   );

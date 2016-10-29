@@ -575,7 +575,7 @@ $conf['theme_debug'] = FALSE;
 $module_dir = 'sites/all/modules';
 
 //AC Domain
-$ac_subname = 'boston';
+$ac_subname = 'bahstun';
 if (isset($_ENV['AH_SITE_GROUP'])) {
   $ah_site_directory = '/mnt/gfs/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'];
 }
@@ -626,7 +626,7 @@ if (file_exists('/var/www/site-php') && isset($_ENV['AH_SITE_GROUP'])) {
   // traffic. Requires setting additional configuration within include file.
   require DRUPAL_ROOT . '/sites/default/settings/edit-domain.settings.php';
 
-  // Includes default caching settings specific to boston.
+  // Includes default caching settings specific to bahstun.
   require DRUPAL_ROOT . '/sites/default/settings/cache.settings.php';
 
   // Include SAML settings.

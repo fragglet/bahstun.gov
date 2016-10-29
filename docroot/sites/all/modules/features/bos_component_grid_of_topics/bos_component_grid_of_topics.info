@@ -1,7 +1,7 @@
-name = Boston Component Grid of Guides
+name = Bahstun Component Grid of Guides
 description = Provides the grid of guides component.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = entityreference

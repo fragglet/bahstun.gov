@@ -1,5 +1,5 @@
-name = Boston Incapsula
-description = Custom incapsula integration for Boston.
+name = Bahstun Incapsula
+description = Custom incapsula integration for Bahstun.
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = acquia_purge

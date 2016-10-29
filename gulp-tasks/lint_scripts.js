@@ -7,7 +7,7 @@
 module.exports = function (gulp, plugins, options, util) {
   return function () {
     var stream = gulp.src([
-                        options.boston + '/src/js/*.js',
+                        options.bahstun + '/src/js/*.js',
                         options.scripts + '/*.js'
                       ])
                       .pipe(plugins.jshint())

@@ -1,7 +1,7 @@
-name = Boston Vocabulary Features
-description = Boston Vocabulary Features
+name = Bahstun Vocabulary Features
+description = Bahstun Vocabulary Features
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Global Footer feature.
+ * Code for the Bahstun Global Footer feature.
  */
 
 include_once 'bos_context_global_footer.features.inc';

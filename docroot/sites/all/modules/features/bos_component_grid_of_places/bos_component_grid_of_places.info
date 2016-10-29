@@ -1,7 +1,7 @@
-name = Boston Component Grid of Places
-description = Boston Component Grid of Places
+name = Bahstun Component Grid of Places
+description = Bahstun Component Grid of Places
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = entityreference
 dependencies[] = features

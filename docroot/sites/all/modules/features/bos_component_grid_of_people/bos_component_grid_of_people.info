@@ -1,7 +1,7 @@
-name = Boston Component Grid of People
-description = Boston Component Grid of People
+name = Bahstun Component Grid of People
+description = Bahstun Component Grid of People
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = entityreference

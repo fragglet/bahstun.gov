@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Boston Content Type Emergency Alert feature.
+ * Code for the Bahstun Content Type Emergency Alert feature.
  */
 
 include_once 'bos_content_type_emergency_alert.features.inc';

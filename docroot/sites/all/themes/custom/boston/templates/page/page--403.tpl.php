@@ -13,7 +13,7 @@
     <section class="main-content err-content" id="content" role="main">
       <div class="denied-text error-text column desktop-66-left">
         <h1><?php print $title; ?></h1>
-        <?php print token_replace('[boston:403-page-text]'); ?>
+        <?php print token_replace('[bahstun:403-page-text]'); ?>
       </div>
     </section>
   </div>

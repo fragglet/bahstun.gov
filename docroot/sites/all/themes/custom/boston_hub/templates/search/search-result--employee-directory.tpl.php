@@ -73,7 +73,7 @@
             <?php if (isset($user_work_email)): ?>
               <div class="person-profile-image" style="background-image: url(//cob-avatars.herokuapp.com/photos/<?php print base64_encode(strtolower($user_work_email)); ?>)"></div>
             <?php else: ?>
-              <div class="person-profile-image with-border" style="background-image: url(//cob-avatars.herokuapp.com/photos/<?php print base64_encode('default@boston.gov'); ?>)"></div>
+              <div class="person-profile-image with-border" style="background-image: url(//cob-avatars.herokuapp.com/photos/<?php print base64_encode('default@bahstun.gov'); ?>)"></div>
             <?php endif; ?>
           </div>
           <div class="person-text-data">

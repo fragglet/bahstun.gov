@@ -10,9 +10,9 @@ let runSequence = require('run-sequence')
 let options = {};
 
 options.base_path = "./docroot/sites/all/themes/custom";
-options.hub_path = options.base_path + "/boston_hub";
-options.public_path = options.base_path + "/boston_public";
-options.default_path = options.base_path + "/boston";
+options.hub_path = options.base_path + "/bahstun_hub";
+options.public_path = options.base_path + "/bahstun_public";
+options.default_path = options.base_path + "/bahstun";
 
 // Determine which theme we should work on for this task.
 // Default to the default theme, if --hub or --public flag used
@@ -29,7 +29,7 @@ if (util.env.public) {
 
 // Create object of needed paths
 options.paths = {
-  boston: options.default_path,
+  bahstun: options.default_path,
   dest: theme_path + "/dist",
   ie: theme_path + "/src/ie",
   images: theme_path + "/src/img",

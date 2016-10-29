@@ -1,7 +1,7 @@
-name = Boston 311 Request Vocabulary
+name = Bahstun 311 Request Vocabulary
 description = feature for the 311 Request taxonomy
 core = 7.x
-package = Boston
+package = Bahstun
 dependencies[] = bos_shared_fields
 dependencies[] = ctools
 dependencies[] = features

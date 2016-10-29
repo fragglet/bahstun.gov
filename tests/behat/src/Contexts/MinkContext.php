@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * Custom mink extension for Boston.gov website.
+ * Custom mink extension for Bahstun.gov website.
  */
 
-namespace Boston\Contexts;
+namespace Bahstun\Contexts;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
-use Boston\Utility\SpinTrait;
+use Bahstun\Utility\SpinTrait;
 
 /**
- * Class for extending Mink within context of Boston.gov.
+ * Class for extending Mink within context of Bahstun.gov.
  *
- * @package Boston\Contexts
+ * @package Bahstun\Contexts
  */
 class MinkContext extends \Drupal\DrupalExtension\Context\MinkContext implements SnippetAcceptingContext {
 

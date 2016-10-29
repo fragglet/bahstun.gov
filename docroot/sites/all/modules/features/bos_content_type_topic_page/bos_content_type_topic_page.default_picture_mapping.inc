@@ -15,42 +15,42 @@ function bos_content_type_topic_page_default_picture_mapping() {
   $picture_mapping->api_version = 2;
   $picture_mapping->label = 'wide_2000x460';
   $picture_mapping->machine_name = 'wide_2000x460';
-  $picture_mapping->breakpoint_group = 'boston';
+  $picture_mapping->breakpoint_group = 'bahstun';
   $picture_mapping->mapping = array(
-    'custom.boston.wide' => array(
+    'custom.bahstun.wide' => array(
       '1x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_wide_1x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_wide_1x',
       ),
     ),
-    'custom.boston.desktop' => array(
+    'custom.bahstun.desktop' => array(
       '1x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_desktop_1x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_desktop_1x',
       ),
       '2x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_desktop_2x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_desktop_2x',
       ),
     ),
-    'custom.boston.tablet' => array(
+    'custom.bahstun.tablet' => array(
       '1x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_tablet_1x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_tablet_1x',
       ),
       '2x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_tablet_2x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_tablet_2x',
       ),
     ),
-    'custom.boston.mobile' => array(
+    'custom.bahstun.mobile' => array(
       '1x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_mobile_1x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_mobile_1x',
       ),
       '2x' => array(
         'mapping_type' => 'image_style',
-        'image_style' => 'resp_wide_2000x460custom_boston_mobile_2x',
+        'image_style' => 'resp_wide_2000x460custom_bahstun_mobile_2x',
       ),
     ),
   );
